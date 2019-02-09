@@ -1,2 +1,2 @@
-# markeplace
+# marketplace
 Merchant Markeplace
