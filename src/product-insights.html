@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <div w3-include-html="head.html"></div>
+</head>
+
+<body class="timeline-page" style="visibility: hidden;" onload="jsLoad()">
+
+  <div w3-include-html="cannco-header.html"></div>
+
+  <!--================================
+      START BREADCRUMB AREA
+  =================================-->
+  <section class="breadcrumb-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="breadcrumb">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="category-list.html">Top Sellers</a>
+              </li>
+              <li class="active">
+                <a href="#">Buying Insights</a>
+              </li>
+            </ul>
+          </div>
+          <h1 class="page-title">OG Kush</h1>
+        </div>
+        <!-- end /.col-md-12 -->
+      </div>
+      <!-- end /.row -->
+    </div>
+    <!-- end /.container -->
+  </section>
+  <!--================================
+      END BREADCRUMB AREA
+  =================================-->
+
+  <!--================================
+      START PRODUCT MENU AREA
+  =================================-->
+  <section class="dashboard-area">
+    <div class="dashboard_menu_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="dashboard_menu">
+              <li class="">
+                <a href="product-dashboard.html">
+                  <span class="lnr lnr-home"></span>Dashboard</a>
+              </li>
+              <li class="active">
+                <a href="product-insights.html">
+                  <span class="lnr lnr-chart-bars"></span>Buying Insignts</a>
+              </li>
+              <li>
+                <a href="product-waystosave.html">
+                  <span class="lnr lnr-magic-wand"></span>Ways to Save</a>
+              </li>
+              <li class="">
+                <a href="product-certifications.html">
+                  <span class="lnr lnr-license"></span>Certifications</a>
+              </li>
+              <li class="">
+                <a href="product-provenance.html">
+                  <span class="lnr lnr-leaf"></span>Provenance</a>
+              </li>
+            </ul>
+            <!-- end /.dashboard_menu -->
+          </div>
+          <!-- end /.col-md-12 -->
+        </div>
+        <!-- end /.row -->
+      </div>
+      <!-- end /.container -->
+    </div>
+    <!-- end /.dashboard_menu_area :) -->
+  </section>
+  <!--================================
+      END PRODUCT MENU AREA
+  =================================-->
+
+  <!--================================
+            START DASHBOARD AREA
+    =================================-->
+  <section class="dashboard-area">
+    <div class="dashboard_contents">
+
+      <div class="container">
+
+        <!--//////// PRODUCT KPIS /////////-->
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="author-info author-info--dashboard mcolorbg4">
+              <p>PRICE</p>
+              <h3>$234</h3>
+              <p>Above Average</p>
+            </div>
+          </div>
+          <!-- end /.col-md-3 -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="author-info author-info--dashboard mcolorbg1">
+              <p>TCH</p>
+              <h3>5.20%</h3>
+              <p>Above Average</p>
+            </div>
+          </div>
+          <!-- end /.col-md-3 -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="author-info author-info--dashboard mcolorbg1">
+              <p>SALES</p>
+              <h3>10.45%</h3>
+              <p>Above Average</p>
+            </div>
+          </div>
+          <!-- end /.col-md-3 -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="author-info author-info--dashboard mcolorbg1">
+              <p>FEEDBACK</p>
+              <h3>8.5%</h3>
+              <p>Above Average</p>
+            </div>
+          </div>
+          <!-- end /.col-md-3 -->
+        </div>
+        <!-- end /.row -->
+
+        <div class="row">
+
+          <!--//////// SALES TRENDS /////////-->
+          <div class="col-lg-12">
+            <div class="dashboard_module statistics_module">
+              <div class="dashboard__title">
+                <h4>Sales Trend</h4>
+
+                <div class="pull-right">
+                  <div id="stat_legend" class="legend"></div>
+                  <div class="select-wrap">
+                    <select name="mon" class="period_selector">
+                      <option value="jan">Versus Prior Months</option>
+                      <option value="feb">Versus Other Sellers</option>
+                      <option value="mar">Versus Similar Products</option>
+                    </select>
+                    <span class="lnr lnr-chevron-down"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dashboard__content">
+                <canvas id="myChart"></canvas>
+
+                <div class="statistics_data">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                      <div class="single_stat_data">
+                        <h4 class="single_stat__title">478</h4>
+                        <p>Total
+                          <span>Units</span> Sold This Month</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center col-sm-4">
+                      <div class="single_stat_data">
+                        <h4 class="single_stat__title">$229,478</h4>
+                        <p>Total
+                          <span>Revenue</span> This Month</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-right col-sm-4">
+                      <div class="single_stat_data">
+                        <h4 class="single_stat__title">278</h4>
+                        <p>Total
+                          <span>Reviews</span> This Month</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end /.col-md-12 -->
+
+          <!--//////// TOP BUYERS /////////-->
+          <div class="col-lg-6">
+            <div class="dashboard_module chart country_statistics">
+              <div class="dashboard__title">
+                <h4>Top Buyers</h4>
+              </div>
+
+              <div class="dashboard__content">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Buyer</th>
+                      <th>Units</th>
+                      <th>Sales</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="country_flag">
+                          <img src="images/m2.png" alt="buyer">
+                        </div>
+                        <span>MedMen</span>
+                      </td>
+                      <td>56</td>
+                      <td>$223,030</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="country_flag">
+                          <img src="images/m3.png" alt="buyer">
+                        </div>
+                        <span>Mary Jane's</span>
+                      </td>
+                      <td>45</td>
+                      <td>$183,221</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="country_flag">
+                          <img src="images/m4.png" alt="buyer">
+                        </div>
+                        <span>High Times</span>
+                      </td>
+                      <td>34</td>
+                      <td>$139,043</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="country_flag">
+                          <img src="images/m5.png" alt="buyer">
+                        </div>
+                        <span>Mother Mary</span>
+                      </td>
+                      <td>28</td>
+                      <td>$98,321</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- end /.dashboard_module -->
+          </div>
+          <!-- end /.col-md-6 -->
+
+          <!--//////// RECEN PURCHASES /////////-->
+
+          <div class="col-lg-6">
+            <div class="dashboard_module chart country_statistics">
+              <div class="dashboard__title">
+                <h4>Recent Purchases</h4>
+              </div>
+
+              <div class="dashboard__content">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Buyer</th>
+                      <th>Units</th>
+                      <th>Sales</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="country_flag">
+                          <img src="images/m3.png" alt="buyer">
+                        </div>
+                        <span>Mary Jane's</span>
+                      </td>
+                      <td>4</td>
+                      <td>$6,281</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="country_flag">
+                          <img src="images/m2.png" alt="buyer">
+                        </div>
+                        <span>MedMen</span>
+                      </td>
+                      <td>10</td>
+                      <td>$13,299</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="country_flag">
+                          <img src="images/m6.png" alt="buyer">
+                        </div>
+                        <span>Nurple Purp</span>
+                      </td>
+                      <td>5</td>
+                      <td>$7,893</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="country_flag">
+                          <img src="images/m9.png" alt="buyer">
+                        </div>
+                        <span>Dope Girls LA</span>
+                      </td>
+                      <td>12</td>
+                      <td>$16,392</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- end /.dashboard_module -->
+          </div>
+          <!-- end /.col-md-6 -->
+
+          <!--//////// RECENT MESSAGES /////////-->
+          <div class="col-lg-6">
+            <div class="dashboard_module recent_comment">
+              <div class="dashboard__title">
+                <h4>Recent Comments</h4>
+              </div>
+
+              <div class="dashboard__content">
+                <div class="thread">
+                  <ul class="media-list thread-list">
+
+                    <li class="single-thread">
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" src="images/m9.png" alt="Commentator Avatar">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div>
+                            <div class="media-heading">
+                              <a href="author.html">
+                                <h4>Dope Girls LA</h4>
+                              </a>
+                              <span>9 Hours Ago</span>
+                            </div>
+                            <span class="comment-tag buyer">Purchased</span>
+                            <a href="#" class="reply-link">Reply</a>
+                          </div>
+                          <p>Nunc placerat mi id nisi interdum mollis. Praesent there pharetra, justo
+                            ut sceleris que the mattis.</p>
+                        </div>
+                      </div>
+
+                      <!-- comment reply -->
+                      <div class="media depth-2 reply-comment">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" src="images/m2.png" alt="Commentator Avatar">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <form action="#" class="comment-reply-form">
+                            <textarea class="bla" name="reply-comment" placeholder="Write your comment..."></textarea>
+                            <button class="btn btn--md btn--round">Post Comment</button>
+                          </form>
+                        </div>
+                      </div>
+                      <!-- comment reply -->
+                    </li>
+                    <!-- end single comment thread /.comment-->
+
+                    <li class="single-thread">
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" src="images/m3.png" alt="Commentator Avatar">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div>
+                            <div class="media-heading">
+                              <a href="author.html">
+                                <h4>Mary Jane's</h4>
+                              </a>
+                              <span>9 Hours Ago</span>
+                            </div>
+                            <a href="#" class="reply-link">Reply</a>
+                          </div>
+                          <p>Nunc placerat mi id nisi interdum mollis. Praesent phare tra, justo ut
+                            sceleris que the mattis, leo quam.</p>
+                        </div>
+                      </div>
+
+                      <!-- comment reply -->
+                      <div class="media depth-2 reply-comment">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" src="images/m2.png" alt="Commentator Avatar">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <form action="#" class="comment-reply-form">
+                            <textarea name="reply-comment" placeholder="Write your comment..."></textarea>
+                            <button class="btn btn--sm btn--round">Post Comment</button>
+                          </form>
+                        </div>
+                      </div>
+                      <!-- comment reply -->
+                    </li>
+
+                    <li class="single-thread">
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" src="images/m7.png" alt="Commentator Avatar">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div>
+                            <div class="media-heading">
+                              <a href="author.html">
+                                <h4>GreenAcres</h4>
+                              </a>
+                              <span>9 Hours Ago</span>
+                            </div>
+                            <a href="#" class="reply-link">Reply</a>
+                          </div>
+                          <p>Nunc placerat mi id nisi interdum mollis. Praesent phare tra, justo ut
+                            sceleris que the mattis, leo quam.</p>
+                        </div>
+                      </div>
+
+                      <!-- comment reply -->
+                      <div class="media depth-2 reply-comment">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object" src="images/m2.png" alt="Commentator Avatar">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <form action="#" class="comment-reply-form">
+                            <textarea name="reply-comment" placeholder="Write your comment..."></textarea>
+                            <button class="btn btn--sm btn--round">Post Comment</button>
+                          </form>
+                        </div>
+                      </div>
+                      <!-- comment reply -->
+                    </li>
+
+                    <!-- end single comment thread /.comment-->
+                  </ul>
+                  <!-- end /.media-list -->
+                </div>
+                <!-- end /.comments -->
+              </div>
+            </div>
+          </div>
+
+          <!--//////// RECENT COMMENTS /////////-->
+          <div class="col-lg-6">
+            <div class="dashboard_module recent_message">
+              <div class="dashboard__title">
+                <h4>Recent Message</h4>
+                <div class="loading">
+                  <a href="#">View All</a>
+                </div>
+              </div>
+
+              <div class="dashboard__content">
+                <div class="messages">
+                  <div class="message">
+                    <div class="message__actions_avatar">
+                      <div class="actions">
+                        <span class="fa fa-star"></span>
+                        <div class="custom_checkbox">
+                          <input type="checkbox" id="ch1">
+                          <label for="ch1">
+                            <span class="shadow_checkbox"></span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="avatar">
+                        <img src="images/m5.png" alt="">
+                      </div>
+                    </div>
+                    <!-- end /.actions -->
+
+                    <div class="message_data">
+                      <div class="name_time">
+                        <div class="name">
+                          <p>Mother Mary</p>
+                          <span class="lnr lnr-envelope"></span>
+                        </div>
+
+                        <span class="time">Just now</span>
+                        <p>Hello John Smith! Nunc placerat mi ...</p>
+                      </div>
+                    </div>
+                    <!-- end /.message_data -->
+                  </div>
+                  <!-- end /.message -->
+
+                  <div class="message">
+                    <div class="message__actions_avatar">
+                      <div class="actions">
+                        <span class="fa fa-star-o"></span>
+                        <div class="custom_checkbox">
+                          <input type="checkbox" id="ch2">
+                          <label for="ch2">
+                            <span class="shadow_checkbox"></span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="avatar">
+                        <img src="images/m3.png" alt="">
+                      </div>
+                    </div>
+                    <!-- end /.actions -->
+
+                    <div class="message_data">
+                      <div class="name_time">
+                        <div class="name">
+                          <p>Mary Jane's</p>
+                          <span class="lnr lnr-envelope"></span>
+                        </div>
+
+                        <span class="time">Just now</span>
+                        <p>Hi! Nunc placerat mi id nisi interum ...</p>
+                      </div>
+                    </div>
+                    <!-- end /.message_data -->
+                  </div>
+                  <!-- end /.message -->
+
+                  <div class="message_composer">
+                    <div class="composer_field" id="trumbowyg-demo"></div>
+                    <!-- end /.trumbowyg-demo -->
+
+                    <div class="attached"></div>
+
+                    <div class="btns">
+                      <button class="btn send btn--sm btn--round">Reply</button>
+                      <label for="att">
+                        <input type="file" class="attachment_field" id="att" multiple="">
+                        <span class="lnr lnr-paperclip"></span>Attachment</label>
+                    </div>
+                    <!-- end /.message_composer -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end /.col-md-6 -->
+
+          <!--//////// BAR CHART /////////-->
+          <div class="col-md-12">
+            <div class="dashboard_module single_item_visitor">
+              <div class="dashboard__title">
+                <h4>Daily Sales</h4>
+                <div class="pull-right">
+                  <div class="select-wrap">
+                    <select name="months" class="period_selector">
+                      <option value="jan">January</option>
+                      <option value="feb">February</option>
+                      <option value="mar">March</option>
+                    </select>
+                    <span class="lnr lnr-chevron-down"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard__content">
+                <canvas id="single_item_visit"></canvas>
+
+                <div class="item_info">
+                  <div class="info">
+                    <h4 class="indicate">+60%</h4>
+                    <p>Compared to Last Month</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- end /.row -->
+      </div>
+      <!-- end /.container -->
+    </div>
+    <!-- end /.dashboard_menu_area -->
+  </section>
+  <!--================================
+          END DASHBOARD AREA
+  =================================-->
+
+
+  <div w3-include-html="cannco-footer.html"></div>
+
+  <!--//////////////////// JS GOES HERE ////////////////-->
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+  </script>
+
+  <script>
+    function jsLoad() {
+      document.body.style.visibility = 'visible';
+    }
+  </script>
+
+  <script>
+    includeHTML();
+  </script>
+
+  <!-- inject:js -->
+  <script src="js/vendor/jquery/jquery-1.12.3.js"></script>
+  <script src="js/vendor/jquery/popper.min.js"></script>
+  <script src="js/vendor/jquery/uikit.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/chart.bundle.min.js"></script>
+  <script src="js/vendor/grid.min.js"></script>
+  <script src="js/vendor/jquery-ui.min.js"></script>
+  <script src="js/vendor/jquery.barrating.min.js"></script>
+  <script src="js/vendor/jquery.countdown.min.js"></script>
+  <script src="js/vendor/jquery.counterup.min.js"></script>
+  <script src="js/vendor/jquery.easing1.3.js"></script>
+  <script src="js/vendor/owl.carousel.min.js"></script>
+  <script src="js/vendor/slick.min.js"></script>
+  <script src="js/vendor/tether.min.js"></script>
+  <script src="js/vendor/trumbowyg.min.js"></script>
+  <script src="js/vendor/waypoints.min.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/main.js"></script>
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBeySPFGz7DIUTrReCRQT6HYaMM0ia0knA"></script>
+  <script src="js/map.js"></script>
+  <!-- endinject -->
+</body>
+
+</html>
