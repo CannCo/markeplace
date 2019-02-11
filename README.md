@@ -1,2 +1,2 @@
 # marketplace
-Merchant Markeplace
+CannCo Cannabis Merchant Markeplace
