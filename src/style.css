@@ -93,6 +93,10 @@
   width: 220px;
 }
 
+.blackandwhite {
+  filter: grayscale(100%);
+}
+
 body {
   font-family: 'Quicksand', sans-serif;
   position: relative;
@@ -2382,7 +2386,7 @@ h6 {
   border-radius: 4px 4px 0 0;
   width: 100%;
 }
-
+ 
 .product .product__thumbnail:before {
   position: absolute;
   content: "";
@@ -8118,20 +8122,14 @@ ul.nav-tabs.nav--tabs2 li a::before {
   height: 100%;
   width: 100%;
   content: '';
-  background: -webkit-gradient(linear, right top, left top, from(#0030de), to(#0030de));
-  background: -webkit-linear-gradient(right, #0030de, #0030de);
-  background: -o-linear-gradient(right, #0030de, #0030de);
-  background: linear-gradient(to left, #0030de, #0030de);
+  background: rgba(23, 28, 35, 0.7);
   top: 0;
   left: 0;
   opacity: 0.8;
 }
 
 .hero-area.hero--1:before {
-  background: -webkit-gradient(linear, right top, left top, from(#b4a648), to(#b4a648));
-  background: -webkit-linear-gradient(right, #b4a648, #b4a648);
-  background: -o-linear-gradient(right, #b4a648, #b4a648);
-  background: linear-gradient(to left, #b4a648, #b4a648);
+  background: rgba(23, 28, 35, 0.7);
   opacity: .9;
 }
 
@@ -8807,11 +8805,11 @@ span.counter {
 }
 
 .proposal--left {
-  background: #b4a648no-repeat bottom;
+  background: #434649 no-repeat bottom;
 }
 
 .proposal--right {
-  background: #b4a648 no-repeat bottom;
+  background: #b7a632 no-repeat bottom;
 }
 
 /***************************************
