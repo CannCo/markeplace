@@ -86,19 +86,19 @@
             data: {
                 labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
                 datasets: [{
-                        label: "Revenue",
+                        label: "Retail",
                         backgroundColor: 'rgba(193, 183, 120, .5)',
                         borderColor: '#c1b778',
-                        data: [15, 17, 25, 23, 27, 28, 30, 29, 32, 32, 33, 35],
-                        pointBackgroundColor: '#7347c1',
+                        data: [150, 170, 250, 230, 270, 280, 300, 290, 320, 320, 330, 350],
+                        pointBackgroundColor: 'rgba(193, 183, 120, .5)',
                         pointBorderColor: '#fff'
                     },
                     {
-                        label: "Cost",
+                        label: "Wholesale",
                         backgroundColor: 'rgba(67, 70, 73, .5)',
                         borderColor: '#434649',
-                        data: [10, 13, 18, 18, 19, 22, 24, 24, 25, 24, 23, 22],
-                        pointBackgroundColor: '#0674ec',
+                        data: [100, 130, 180, 180, 190, 220, 240, 240, 250, 240, 230, 220],
+                        pointBackgroundColor: 'rgba(67, 70, 73, 1)',
                         pointBorderColor: '#fff'
                     }
                 ]
@@ -111,7 +111,7 @@
                         display: true,
                         ticks: {
                             beginAtZero: true,
-                            suggestedMax: 40,
+                            suggestedMax: 400,
                             fontColor: ctxTickColor
                         }
                     }]

@@ -3193,7 +3193,7 @@ h6 {
 }
 
 .breadcrumb ul li.active a {
-  color: #444649;
+  color: #b7a632;
 }
 
 .breadcrumb ul {
@@ -6619,7 +6619,7 @@ div#ui-datepicker-div tbody tr td a:hover {
 }
 
 .mcolorbg2 {
-  background: #d6b368;
+  background: #b4a648;
 }
 
 .mcolorbg3 {
@@ -7812,7 +7812,7 @@ ul.nav-tabs.nav--tabs2 li a::before {
 }
 
 .author-area__seller-btn:hover {
-  background: #b4a648;
+  background: #b4a6489d;
   color: #fff;
 }
 
@@ -9360,10 +9360,7 @@ span.counter {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: -webkit-gradient(linear, right top, left top, from(#b4a648), to(#b4a648));
-  background: -webkit-linear-gradient(right, #b4a648, #b4a648);
-  background: -o-linear-gradient(right, #b4a648, #b4a648);
-  background: linear-gradient(to left, #b4a648, #b4a648);
+  background: rgba(67, 70, 73, 1);
   opacity: 0.8;
   top: 0;
   left: 0;
@@ -10015,6 +10012,10 @@ span.counter {
   background: #f6f7fb;
 }
 
+.more_product_area2 { 
+  background: rgba( 68, 70, 73, .1);
+}
+
 .more_product_area .section-title h1 {
   margin-bottom: 0;
   font-size: 30px;
@@ -10357,7 +10358,7 @@ span.counter {
 .dashboard_menu_area {
   -webkit-box-shadow: 0 3px 10px rgba(121, 135, 150, 0.1);
   box-shadow: 0 3px 10px rgba(121, 135, 150, 0.1);
-  background: #fff;
+  background: rgba(86,89,91, 0);
 }
 
 .dashboard_menu_area .dashboard_menu {
