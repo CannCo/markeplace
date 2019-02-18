@@ -1,728 +1,813 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <div w3-include-html="head.html"></div>
+  </head>
 
-<head>
-  <div w3-include-html="head.html"></div>
-</head>
+  <body
+    style="visibility: hidden;"
+    onload="jsLoad()"
+    class="home2 single-vendor"
+  >
+    <div w3-include-html="cannco-header.html"></div>
 
-<body style="visibility: hidden;" onload="jsLoad()" class="home2 single-vendor">
-
-  <div w3-include-html="cannco-header.html"></div>
-
-  <!--================================
+    <!--================================
         START HERO AREA
     =================================-->
-  <section class="hero-area hero--1 bgimage">
-    <div class="bg_image_holder blackandwhite">
-      <img src="images/background-4.jpg" alt="">
-    </div>
-    <!-- start hero-content -->
-    <div class="hero-content content_above">
-      <!-- start .contact_wrapper -->
-      <div class="content-wrapper">
+    <section class="hero-area hero--1 bgimage">
+      <div class="bg_image_holder blackandwhite">
+        <img src="images/background-4.jpg" alt="" />
+      </div>
+      <!-- start hero-content -->
+      <div class="hero-content content_above">
+        <!-- start .contact_wrapper -->
+        <div class="content-wrapper">
+          <!-- start .container -->
+          <div class="container">
+            <!-- start row -->
+            <div class="row">
+              <!-- start col-md-12 -->
+              <div class="col-md-12">
+                <div class="hero__content__title">
+                  <h1>
+                    <span class="light">Supercharge Your Business With</span>
+                    <span class="bold pcolor">The CannCo Market</span>
+                  </h1>
+                  <p class="tagline">
+                    Over 2,000 Cannabis Merchants Trust Our Marketplace
+                  </p>
+                </div>
+
+                <!-- start .hero__btn-area-->
+                <div class="hero__btn-area">
+                  <a href="category-list.html" class="btn btn--round btn--lg"
+                    >View All Products</a
+                  >
+                  <a href="category-list.html" class="btn btn--round btn--lg"
+                    >Popular Products</a
+                  >
+                </div>
+                <!-- end .hero__btn-area-->
+              </div>
+              <!-- end /.col-md-12 -->
+            </div>
+            <!-- end /.row -->
+          </div>
+          <!-- end /.container -->
+        </div>
+        <!-- end .contact_wrapper -->
+      </div>
+      <!-- end hero-content -->
+
+      <!--start search-area -->
+      <div class="search-area">
         <!-- start .container -->
         <div class="container">
-          <!-- start row -->
+          <!-- start .container -->
           <div class="row">
-            <!-- start col-md-12 -->
-            <div class="col-md-12">
-              <div class="hero__content__title">
-                <h1>
-                  <span class="light">Grow Your Business With</span>
-                  <span class="bold pcolor">The CannCo Market</span>
-                </h1>
-                <p class="tagline">Over 2,000 Cannabis Merchants Trust Our Marketplace</p>
+            <!-- start .col-sm-12 -->
+            <div class="col-sm-12">
+              <!-- start .search_box -->
+              <div class="search_box">
+                <form action="category-list.html">
+                  <input
+                    type="text"
+                    class="text_field"
+                    placeholder="Find your products..."
+                  />
+                  <div class="search__select">
+                    <select name="category" class="select--field" id="cat">
+                      <option value="">All Categories</option>
+                      <option value="">Flower</option>
+                      <option value="">Extract</option>
+                      <option value="">Tincture</option>
+                      <option value="">Wax & Shatter</option>
+                      <option value="">Pre-Rolls</option>
+                      <option value="">Editable</option>
+                      <option value="">Topicals</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="search-btn btn--lg">
+                    Search Now
+                  </button>
+                </form>
               </div>
-
-              <!-- start .hero__btn-area-->
-              <div class="hero__btn-area">
-                <a href="category-list.html" class="btn btn--round btn--lg">View All Products</a>
-                <a href="category-list.html" class="btn btn--round btn--lg">Popular Products</a>
-              </div>
-              <!-- end .hero__btn-area-->
+              <!-- end ./search_box -->
             </div>
-            <!-- end /.col-md-12 -->
+            <!-- end /.col-sm-12 -->
           </div>
           <!-- end /.row -->
         </div>
         <!-- end /.container -->
       </div>
-      <!-- end .contact_wrapper -->
-    </div>
-    <!-- end hero-content -->
+      <!--start /.search-area -->
+    </section>
+    <!--================================
+        END HERO AREA
+    =================================-->
 
-    <!--start search-area -->
-    <div class="search-area">
-      <!-- start .container -->
+    <!--================================
+        START FEATURE AREA
+    =================================-->
+    <section class="features section--padding">
+      <!-- start container -->
       <div class="container">
-        <!-- start .container -->
+        <!-- start row -->
         <div class="row">
-          <!-- start .col-sm-12 -->
-          <div class="col-sm-12">
-            <!-- start .search_box -->
-            <div class="search_box">
-              <form action="category-list.html">
-                <input type="text" class="text_field" placeholder="Find your products...">
-                <div class="search__select">
-                  <select name="category" class="select--field" id="cat">
-                    <option value="">All Categories</option>
-                    <option value="">Flower</option>
-                    <option value="">Extract</option>
-                    <option value="">Tincture</option>
-                    <option value="">Wax & Shatter</option>
-                    <option value="">Pre-Rolls</option>
-                    <option value="">Editable</option>
-                    <option value="">Topicals</option>
-                  </select>
-                </div>
-                <button type="submit" class="search-btn btn--lg">Search Now</button>
-              </form>
+          <!-- start search-area -->
+          <div class="col-lg-4">
+            <div class="feature">
+              <div class="feature__img">
+                <img src="images/feature1.png" alt="feature" />
+              </div>
+              <div class="feature__title">
+                <h2 class="pcolor">Orders</h2>
+                <h4>You Can Trust</h4>
+              </div>
+              <div class="feature__desc">
+                <p>
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet diam congue
+                  is laoreet elit metus.
+                </p>
+              </div>
             </div>
-            <!-- end ./search_box -->
+            <!-- end /.feature -->
           </div>
-          <!-- end /.col-sm-12 -->
+          <!-- end /.col-md-4 -->
+
+          <!-- start search-area -->
+          <div class="col-lg-4">
+            <div class="feature">
+              <div class="feature__img">
+                <img src="images/feature2.png" alt="feature" />
+              </div>
+              <div class="feature__title">
+                <h2 class="pcolor">Products</h2>
+                <h4>You Can Trust</h4>
+              </div>
+              <div class="feature__desc">
+                <p>
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet diam congue
+                  is laoreet elit metus.
+                </p>
+              </div>
+            </div>
+            <!-- end /.feature -->
+          </div>
+          <!-- end /.col-md-4 -->
+
+          <!-- start search-area -->
+          <div class="col-lg-4">
+            <div class="feature">
+              <div class="feature__img">
+                <img src="images/feature3.png" alt="feature" />
+              </div>
+              <div class="feature__title">
+                <h2 class="pcolor">People</h2>
+                <h4>You Can Trust</h4>
+              </div>
+              <div class="feature__desc">
+                <p>
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet diam congue
+                  is laoreet elit metus.
+                </p>
+              </div>
+            </div>
+            <!-- end /.feature -->
+          </div>
+          <!-- end /.col-md-4 -->
         </div>
         <!-- end /.row -->
       </div>
       <!-- end /.container -->
-    </div>
-    <!--start /.search-area -->
-  </section>
-  <!--================================
-        END HERO AREA
-    =================================-->
-
-  <!--================================
-        START FEATURE AREA
-    =================================-->
-  <section class="features section--padding">
-    <!-- start container -->
-    <div class="container">
-      <!-- start row -->
-      <div class="row">
-        <!-- start search-area -->
-        <div class="col-lg-4">
-          <div class="feature">
-            <div class="feature__img">
-              <img src="images/feature1.png" alt="feature">
-            </div>
-            <div class="feature__title">
-              <h2 class="pcolor">Orders</h2>
-              <h4>You Can Trust</h4>
-            </div>
-            <div class="feature__desc">
-              <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                leo quam aliquet diam congue is laoreet elit metus.</p>
-            </div>
-          </div>
-          <!-- end /.feature -->
-        </div>
-        <!-- end /.col-md-4 -->
-
-        <!-- start search-area -->
-        <div class="col-lg-4">
-          <div class="feature">
-            <div class="feature__img">
-              <img src="images/feature2.png" alt="feature">
-            </div>
-            <div class="feature__title">
-              <h2 class="pcolor">Products</h2>
-              <h4>You Can Trust</h4>
-            </div>
-            <div class="feature__desc">
-              <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                leo quam aliquet diam congue is laoreet elit metus.</p>
-            </div>
-          </div>
-          <!-- end /.feature -->
-        </div>
-        <!-- end /.col-md-4 -->
-
-        <!-- start search-area -->
-        <div class="col-lg-4">
-          <div class="feature">
-            <div class="feature__img">
-              <img src="images/feature3.png" alt="feature">
-            </div>
-            <div class="feature__title">
-              <h2 class="pcolor">People</h2>
-              <h4>You Can Trust</h4>
-            </div>
-            <div class="feature__desc">
-              <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                leo quam aliquet diam congue is laoreet elit metus.</p>
-            </div>
-          </div>
-          <!-- end /.feature -->
-        </div>
-        <!-- end /.col-md-4 -->
-      </div>
-      <!-- end /.row -->
-    </div>
-    <!-- end /.container -->
-  </section>
-  <!--================================
+    </section>
+    <!--================================
         END FEATURE AREA
     =================================-->
 
-  <div w3-include-html="product-rec-more2.html"></div>
+    <div w3-include-html="product-rec-more2.html"></div>
 
-  <!--================================
+    <!--================================
         START COUNTER UP AREA
     =================================-->
-  <section class="counter-up-area bgimage">
-    <div class="bg_image_holder">
-      <img src="images/background-1.jpg" alt="">
-    </div>
-    <!-- start .container -->
-    <div class="container content_above">
-      <!-- start .col-md-12 -->
-      <div class="col-md-12">
-        <div class="counter-up">
-          <div class="counter mcolor2">
-            <span class="lnr lnr-briefcase"></span>
-            <span class="count">38,436</span>
-            <p>items for sale</p>
-          </div>
-          <div class="counter mcolor1">
-            <span class="lnr lnr-smile"></span>
-            <span class="count">15,436</span>
-            <p>purchase orders</p>
-          </div>
-          <div class="counter mcolor3">
-            <span class="lnr lnr-cloud-download"></span>
-            <span class="count">10,399,436</span>
-            <p>total sales</p>
-          </div>
-          <div class="counter mcolor4">
-            <span class="lnr lnr-users"></span>
-            <span class="count">1,800</span>
-            <p>merchants</p>
+    <section class="counter-up-area bgimage">
+      <div class="bg_image_holder">
+        <img src="images/background-1.jpg" alt="" />
+      </div>
+      <!-- start .container -->
+      <div class="container content_above">
+        <!-- start .col-md-12 -->
+        <div class="col-md-12">
+          <div class="counter-up">
+            <div class="counter mcolor2">
+              <span class="lnr lnr-briefcase"></span>
+              <span class="count">38,436</span>
+              <p>items for sale</p>
+            </div>
+            <div class="counter mcolor1">
+              <span class="lnr lnr-smile"></span>
+              <span class="count">15,436</span>
+              <p>purchase orders</p>
+            </div>
+            <div class="counter mcolor3">
+              <span class="lnr lnr-cloud-download"></span>
+              <span class="count">10,399,436</span>
+              <p>total sales</p>
+            </div>
+            <div class="counter mcolor4">
+              <span class="lnr lnr-users"></span>
+              <span class="count">1,800</span>
+              <p>merchants</p>
+            </div>
           </div>
         </div>
+        <!-- end /.col-md-12 -->
       </div>
-      <!-- end /.col-md-12 -->
-    </div>
-    <!-- end /.container -->
-  </section>
-  <!--================================
+      <!-- end /.container -->
+    </section>
+    <!--================================
         END COUNTER UP AREA
     =================================-->
 
-
-  <!--================================
+    <!--================================
         START OVERVIEW AREA
     =================================-->
-  <section class="overview-area section--padding">
-    <!-- start container -->
-    <div class="container">
-      <!-- start row -->
-      <div class="row">
-        <!-- start col-md-12 -->
-        <div class="col-md-12">
-          <div class="section-title">
-            <h1>Save Time
-              <span class="highlighted">and Money</span>
-            </h1>
-            <p>Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid
-              est laborum dolo rumes fugats untras.</p>
+    <section class="overview-area section--padding">
+      <!-- start container -->
+      <div class="container">
+        <!-- start row -->
+        <div class="row">
+          <!-- start col-md-12 -->
+          <div class="col-md-12">
+            <div class="section-title">
+              <h1>
+                Save Time
+                <span class="highlighted">and Money</span>
+              </h1>
+              <p>
+                Laborum dolo rumes fugats untras. Etharums ser quidem rerum
+                facilis dolores nemis omnis fugats. Lid est laborum dolo rumes
+                fugats untras.
+              </p>
+            </div>
           </div>
+          <!-- end /.col-md-12 -->
         </div>
-        <!-- end /.col-md-12 -->
+        <!-- end /.row -->
+
+        <div class="row">
+          <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
+            <div class="overview-icon">
+              <img src="images/fac1.png" alt="overview icon" />
+            </div>
+          </div>
+          <!-- end /.col-md-4 -->
+
+          <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
+            <div class="step_num">01</div>
+            <h2 class="overview-title">Smart Purchase Orders</h2>
+            <p>
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+              ut scelerisque the mattis, leo quam aliquet congue placerat mi id
+              nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+              mattis, leo quam aliquet.
+            </p>
+          </div>
+          <!-- end /.col-md-5 -->
+
+          <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
+            <div class="step_num">02</div>
+            <h2 class="overview-title">Verified Products and Merchants</h2>
+            <p>
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+              ut scelerisque the mattis, leo quam aliquet congue placerat mi id
+              nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+              mattis, leo quam aliquet.
+            </p>
+          </div>
+          <!-- end /.col-md-5 -->
+
+          <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
+            <div class="overview-icon">
+              <img src="images/fac2.png" alt="overview icon" />
+            </div>
+          </div>
+          <!-- end /.col-md-4 -->
+
+          <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
+            <div class="overview-icon">
+              <img src="images/fac3.png" alt="overview icon" />
+            </div>
+          </div>
+          <!-- end /.col-md-4 -->
+
+          <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
+            <div class="step_num">03</div>
+            <h2 class="overview-title">Effortless Compliance</h2>
+            <p>
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+              ut scelerisque the mattis, leo quam aliquet congue placerat mi id
+              nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+              mattis, leo quam aliquet.
+            </p>
+          </div>
+          <!-- end /.col-md-5 -->
+        </div>
+        <!-- end /.row -->
       </div>
-      <!-- end /.row -->
-
-      <div class="row">
-
-        <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
-          <div class="overview-icon">
-            <img src="images/fac1.png" alt="overview icon">
-          </div>
-        </div>
-        <!-- end /.col-md-4 -->
-
-        <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
-          <div class="step_num">01</div>
-          <h2 class="overview-title">Smart Purchase Orders</h2>
-          <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-            aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-            leo quam aliquet.</p>
-        </div>
-        <!-- end /.col-md-5 -->
-
-        <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
-          <div class="step_num">02</div>
-          <h2 class="overview-title">Verified Products and Merchants</h2>
-          <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-            aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-            leo quam aliquet.</p>
-        </div>
-        <!-- end /.col-md-5 -->
-
-        <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
-          <div class="overview-icon">
-            <img src="images/fac2.png" alt="overview icon">
-          </div>
-        </div>
-        <!-- end /.col-md-4 -->
-
-        <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
-          <div class="overview-icon">
-            <img src="images/fac3.png" alt="overview icon">
-          </div>
-        </div>
-        <!-- end /.col-md-4 -->
-
-        <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
-          <div class="step_num">03</div>
-          <h2 class="overview-title">Effortless Compliance</h2>
-          <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-            aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-            leo quam aliquet.</p>
-        </div>
-        <!-- end /.col-md-5 -->
-
-      </div>
-      <!-- end /.row -->
-    </div>
-    <!-- end /.container -->
-  </section>
-  <!--================================
+      <!-- end /.container -->
+    </section>
+    <!--================================
         END OVERVIEW AREA
     =================================-->
 
-
-  <!--================================
+    <!--================================
         END OVERVIEW AREA
     =================================-->
-  <section class="partner-area section--padding bgimage">
-    <div class="bg_image_holder">
-      <img src="images/ptbg.png" alt="">
-    </div>
-    <!-- start container -->
-    <div class="container">
-      <!-- start row -->
-      <div class="row">
-        <!-- start col-md-12 -->
-        <div class="col-md-12">
-          <div class="section-title">
-            <h1>Merchants That Use
-              <span class="highlighted">The CannCo Market</span>
-            </h1>
-            <p>Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid
-              est laborum dolo rumes fugats untras.</p>
-          </div>
-        </div>
-        <!-- end /.col-md-12 -->
+    <section class="partner-area section--padding bgimage">
+      <div class="bg_image_holder">
+        <img src="images/ptbg.png" alt="" />
       </div>
-      <!-- end /.row -->
+      <!-- start container -->
+      <div class="container">
+        <!-- start row -->
+        <div class="row">
+          <!-- start col-md-12 -->
+          <div class="col-md-12">
+            <div class="section-title">
+              <h1>
+                Merchants That Use
+                <span class="highlighted">The CannCo Market</span>
+              </h1>
+              <p>
+                Laborum dolo rumes fugats untras. Etharums ser quidem rerum
+                facilis dolores nemis omnis fugats. Lid est laborum dolo rumes
+                fugats untras.
+              </p>
+            </div>
+          </div>
+          <!-- end /.col-md-12 -->
+        </div>
+        <!-- end /.row -->
 
-      <div class="row">
-        <div class="col-md-12">
-          <div class="partners">
-            <div class="partner">
-              <img src="images/cl1.png" alt="partner image">
-            </div>
-            <div class="partner">
-              <img src="images/cl2.png" alt="partner image">
-            </div>
-            <div class="partner">
-              <img src="images/cl3.png" alt="partner image">
-            </div>
-            <div class="partner">
-              <img src="images/cl4.png" alt="partner image">
-            </div>
-            <div class="partner">
-              <img src="images/cl2.png" alt="partner image">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="partners">
+              <div class="partner">
+                <img src="images/cl1.png" alt="partner image" />
+              </div>
+              <div class="partner">
+                <img src="images/cl2.png" alt="partner image" />
+              </div>
+              <div class="partner">
+                <img src="images/cl3.png" alt="partner image" />
+              </div>
+              <div class="partner">
+                <img src="images/cl4.png" alt="partner image" />
+              </div>
+              <div class="partner">
+                <img src="images/cl2.png" alt="partner image" />
+              </div>
             </div>
           </div>
         </div>
+        <!-- end /.row -->
       </div>
-      <!-- end /.row -->
-    </div>
-    <!-- end /.container -->
-  </section>
-  <!--================================
+      <!-- end /.container -->
+    </section>
+    <!--================================
         END OVERVIEW AREA
     =================================-->
 
-  <!--================================
+    <!--================================
         START WHY CHOOSE US AREA
     =================================-->
-  <section class="why_choose section--padding">
-    <!-- start container -->
-    <div class="container">
-      <!-- start row -->
-      <div class="row">
-        <!-- start col-md-12 -->
-        <div class="col-md-12">
-          <div class="section-title">
-            <h1>Why Choose
-              <span class="highlighted">CannCo</span>
-            </h1>
-            <p>Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid
-              est laborum dolo rumes fugats untras.</p>
+    <section class="why_choose section--padding">
+      <!-- start container -->
+      <div class="container">
+        <!-- start row -->
+        <div class="row">
+          <!-- start col-md-12 -->
+          <div class="col-md-12">
+            <div class="section-title">
+              <h1>
+                Why Choose
+                <span class="highlighted">CannCo</span>
+              </h1>
+              <p>
+                Laborum dolo rumes fugats untras. Etharums ser quidem rerum
+                facilis dolores nemis omnis fugats. Lid est laborum dolo rumes
+                fugats untras.
+              </p>
+            </div>
           </div>
+          <!-- end /.col-md-12 -->
         </div>
-        <!-- end /.col-md-12 -->
+        <!-- end /.row -->
+
+        <!-- start row -->
+        <div class="row">
+          <!-- start .col-md-4 -->
+          <div class="col-lg-4 col-md-6">
+            <!-- start .feature2 -->
+            <div class="feature2">
+              <span class="feature2__count">01</span>
+              <div class="feature2__content">
+                <span class="lnr lnr-license pcolor"></span>
+                <h3 class="feature2-title">Certified Products</h3>
+                <p>
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet diam congue
+                  is laoreet elit metus.
+                </p>
+              </div>
+              <!-- end /.feature2__content -->
+            </div>
+            <!-- end /.feature2 -->
+          </div>
+          <!-- end /.col-md-4 -->
+
+          <!-- start .col-md-4 -->
+          <div class="col-lg-4 col-md-6">
+            <!-- start .feature2 -->
+            <div class="feature2">
+              <span class="feature2__count">02</span>
+              <div class="feature2__content">
+                <span class="lnr lnr-magic-wand scolor"></span>
+                <h3 class="feature2-title">One Stop Shopping</h3>
+                <p>
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet diam congue
+                  is laoreet elit metus.
+                </p>
+              </div>
+              <!-- end /.feature2__content -->
+            </div>
+            <!-- end /.feature2 -->
+          </div>
+          <!-- end /.col-md-4 -->
+
+          <!-- start .col-md-4 -->
+          <div class="col-lg-4 col-md-6">
+            <!-- start .feature2 -->
+            <div class="feature2">
+              <span class="feature2__count">03</span>
+              <div class="feature2__content">
+                <span class="lnr lnr-lock mcolor1"></span>
+                <h3 class="feature2-title">Verified Merchants</h3>
+                <p>
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet diam congue
+                  is laoreet elit metus.
+                </p>
+              </div>
+              <!-- end /.feature2__content -->
+            </div>
+            <!-- end /.feature2 -->
+          </div>
+          <!-- end /.col-md-4 -->
+
+          <!-- start .col-md-4 -->
+          <div class="col-lg-4 col-md-6">
+            <!-- start .feature2 -->
+            <div class="feature2">
+              <span class="feature2__count">04</span>
+              <div class="feature2__content">
+                <span class="lnr lnr-chart-bars mcolor2"></span>
+                <h3 class="feature2-title">Business Insights</h3>
+                <p>
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet diam congue
+                  is laoreet elit metus.
+                </p>
+              </div>
+              <!-- end /.feature2__content -->
+            </div>
+            <!-- end /.feature2 -->
+          </div>
+          <!-- end /.col-md-4 -->
+
+          <!-- start .col-md-4 -->
+          <div class="col-lg-4 col-md-6">
+            <!-- start .feature2 -->
+            <div class="feature2">
+              <span class="feature2__count">05</span>
+              <div class="feature2__content">
+                <span class="lnr lnr-leaf mcolor3"></span>
+                <h3 class="feature2-title">Product Provenance</h3>
+                <p>
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet diam congue
+                  is laoreet elit metus.
+                </p>
+              </div>
+              <!-- end /.feature2__content -->
+            </div>
+            <!-- end /.feature2 -->
+          </div>
+          <!-- end /.col-md-4 -->
+
+          <!-- start .col-md-4 -->
+          <div class="col-lg-4 col-md-6">
+            <!-- start .feature2 -->
+            <div class="feature2">
+              <span class="feature2__count">06</span>
+              <div class="feature2__content">
+                <span class="lnr lnr-phone mcolor4"></span>
+                <h3 class="feature2-title">Fast and Friendly Support</h3>
+                <p>
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet diam congue
+                  is laoreet elit metus.
+                </p>
+              </div>
+              <!-- end /.feature2__content -->
+            </div>
+            <!-- end /.feature2 -->
+          </div>
+          <!-- end /.col-md-4 -->
+        </div>
+        <!-- end /.row -->
       </div>
-      <!-- end /.row -->
-
-      <!-- start row -->
-      <div class="row">
-        <!-- start .col-md-4 -->
-        <div class="col-lg-4 col-md-6">
-          <!-- start .feature2 -->
-          <div class="feature2">
-            <span class="feature2__count">01</span>
-            <div class="feature2__content">
-              <span class="lnr lnr-license pcolor"></span>
-              <h3 class="feature2-title">Certified Products</h3>
-              <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                leo quam aliquet diam congue is laoreet elit metus.</p>
-            </div>
-            <!-- end /.feature2__content -->
-          </div>
-          <!-- end /.feature2 -->
-        </div>
-        <!-- end /.col-md-4 -->
-
-        <!-- start .col-md-4 -->
-        <div class="col-lg-4 col-md-6">
-          <!-- start .feature2 -->
-          <div class="feature2">
-            <span class="feature2__count">02</span>
-            <div class="feature2__content">
-              <span class="lnr lnr-magic-wand scolor"></span>
-              <h3 class="feature2-title">One Stop Shopping</h3>
-              <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                leo quam aliquet diam congue is laoreet elit metus.</p>
-            </div>
-            <!-- end /.feature2__content -->
-          </div>
-          <!-- end /.feature2 -->
-        </div>
-        <!-- end /.col-md-4 -->
-
-        <!-- start .col-md-4 -->
-        <div class="col-lg-4 col-md-6">
-          <!-- start .feature2 -->
-          <div class="feature2">
-            <span class="feature2__count">03</span>
-            <div class="feature2__content">
-              <span class="lnr lnr-lock mcolor1"></span>
-              <h3 class="feature2-title">Verified Merchants</h3>
-              <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                leo quam aliquet diam congue is laoreet elit metus.</p>
-            </div>
-            <!-- end /.feature2__content -->
-          </div>
-          <!-- end /.feature2 -->
-        </div>
-        <!-- end /.col-md-4 -->
-
-        <!-- start .col-md-4 -->
-        <div class="col-lg-4 col-md-6">
-          <!-- start .feature2 -->
-          <div class="feature2">
-            <span class="feature2__count">04</span>
-            <div class="feature2__content">
-              <span class="lnr lnr-chart-bars mcolor2"></span>
-              <h3 class="feature2-title">Business Insights</h3>
-              <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                leo quam aliquet diam congue is laoreet elit metus.</p>
-            </div>
-            <!-- end /.feature2__content -->
-          </div>
-          <!-- end /.feature2 -->
-        </div>
-        <!-- end /.col-md-4 -->
-
-        <!-- start .col-md-4 -->
-        <div class="col-lg-4 col-md-6">
-          <!-- start .feature2 -->
-          <div class="feature2">
-            <span class="feature2__count">05</span>
-            <div class="feature2__content">
-              <span class="lnr lnr-leaf mcolor3"></span>
-              <h3 class="feature2-title">Product Provenance</h3>
-              <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                leo quam aliquet diam congue is laoreet elit metus.</p>
-            </div>
-            <!-- end /.feature2__content -->
-          </div>
-          <!-- end /.feature2 -->
-        </div>
-        <!-- end /.col-md-4 -->
-
-        <!-- start .col-md-4 -->
-        <div class="col-lg-4 col-md-6">
-          <!-- start .feature2 -->
-          <div class="feature2">
-            <span class="feature2__count">06</span>
-            <div class="feature2__content">
-              <span class="lnr lnr-phone mcolor4"></span>
-              <h3 class="feature2-title">Fast and Friendly Support</h3>
-              <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                leo quam aliquet diam congue is laoreet elit metus.</p>
-            </div>
-            <!-- end /.feature2__content -->
-          </div>
-          <!-- end /.feature2 -->
-        </div>
-        <!-- end /.col-md-4 -->
-      </div>
-      <!-- end /.row -->
-    </div>
-    <!-- end /.container -->
-  </section>
-  <!--================================
+      <!-- end /.container -->
+    </section>
+    <!--================================
         END WHY CHOOSE US AREA
     =================================-->
 
-  <!--================================
+    <!--================================
         START SELL BUY
     =================================-->
-  <section class="proposal-area">
-    <!-- start container-fluid -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 no-padding">
-          <div class="proposal proposal--left bgimage">
-            <div class="bg_image_holder blackandwhite">
-              <img src="images/bbg.png" alt="">
-            </div>
-            <div class="content_above">
-              <div class="proposal__icon ">
-                <img src="images/buy.png" alt="Buy icon">
+    <section class="proposal-area">
+      <!-- start container-fluid -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 no-padding">
+            <div class="proposal proposal--left bgimage">
+              <div class="bg_image_holder blackandwhite">
+                <img src="images/bbg.png" alt="" />
               </div>
-              <div class="proposal__content ">
-                <h1 class="text--white">Sell Your Products</h1>
-                <p class="text--white">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                  scelerisque the mattis,
-                  leo quam aliquet diamcongue is laoreet elit metus.</p>
+              <div class="content_above">
+                <div class="proposal__icon ">
+                  <img src="images/buy.png" alt="Buy icon" />
+                </div>
+                <div class="proposal__content ">
+                  <h1 class="text--white">Sell Your Products</h1>
+                  <p class="text--white">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                    justo ut scelerisque the mattis, leo quam aliquet diamcongue
+                    is laoreet elit metus.
+                  </p>
+                </div>
+                <a href="author.html" class="btn--round btn btn--lg btn--white"
+                  >Become an Seller</a
+                >
               </div>
-              <a href="author.html" class="btn--round btn btn--lg btn--white">Become an Seller</a>
             </div>
+            <!-- end /.proposal -->
           </div>
-          <!-- end /.proposal -->
-        </div>
 
-        <div class="col-md-6 no-padding">
-          <div class="proposal proposal--right bgimage">
-            <div class="bg_image_holder blackandwhite">
-              <img src="images/sbg.png" alt="">
-            </div>
+          <div class="col-md-6 no-padding">
+            <div class="proposal proposal--right bgimage">
+              <div class="bg_image_holder blackandwhite">
+                <img src="images/sbg.png" alt="" />
+              </div>
 
-            <div class="content_above">
-              <div class="proposal__icon">
-                <img src="images/sell.png" alt="Sell icon">
+              <div class="content_above">
+                <div class="proposal__icon">
+                  <img src="images/sell.png" alt="Sell icon" />
+                </div>
+                <div class="proposal__content ">
+                  <h1 class="text--white">Start Shopping Today</h1>
+                  <p class="text--white">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                    justo ut scelerisque the mattis, leo quam aliquet diamcongue
+                    is laoreet elit metus.
+                  </p>
+                </div>
+                <a
+                  href="category-list.html"
+                  class="btn--round btn btn--lg btn--white"
+                  >Start Shopping</a
+                >
               </div>
-              <div class="proposal__content ">
-                <h1 class="text--white">Start Shopping Today</h1>
-                <p class="text--white">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                  scelerisque the mattis,
-                  leo quam aliquet diamcongue is laoreet elit metus.</p>
-              </div>
-              <a href="category-list.html" class="btn--round btn btn--lg btn--white">Start Shopping</a>
             </div>
+            <!-- end /.proposal -->
           </div>
-          <!-- end /.proposal -->
         </div>
       </div>
-    </div>
-    <!-- start container-fluid -->
-  </section>
-  <!--================================
+      <!-- start container-fluid -->
+    </section>
+    <!--================================
         END SELL BUY
     =================================-->
 
-  <!--================================
+    <!--================================
         START TESTIMONIAL
     =================================-->
-  <section class="testimonial-area testimonial--2 section--padding bgimage">
-
-    <!-- start .container -->
-    <div class="container">
-      <!-- start row -->
-      <div class="row">
-        <!-- start col-md-12 -->
-        <div class="col-md-12">
-          <div class="section-title">
-            <h1>Feedback from
-              <span class="highlighted">Our Merchants</span>
-            </h1>
-            <p>Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid
-              est laborum dolo rumes fugats untras.</p>
+    <section class="testimonial-area testimonial--2 section--padding bgimage">
+      <!-- start .container -->
+      <div class="container">
+        <!-- start row -->
+        <div class="row">
+          <!-- start col-md-12 -->
+          <div class="col-md-12">
+            <div class="section-title">
+              <h1>
+                Feedback from
+                <span class="highlighted">Our Merchants</span>
+              </h1>
+              <p>
+                Laborum dolo rumes fugats untras. Etharums ser quidem rerum
+                facilis dolores nemis omnis fugats. Lid est laborum dolo rumes
+                fugats untras.
+              </p>
+            </div>
           </div>
+          <!-- end /.col-md-12 -->
         </div>
-        <!-- end /.col-md-12 -->
-      </div>
-      <!-- end /.row -->
+        <!-- end /.row -->
 
-      <!-- start row -->
-      <div class="row">
-        <!-- start .col-md-12 -->
-        <div class="col-md-12">
-          <div class="testimonial-slider">
-            <div class="testimonial">
-              <div class="testimonial__about">
-                <div class="avatar v_middle">
-                  <img src="images/test1.jpg" alt="Testimonial Avatar">
+        <!-- start row -->
+        <div class="row">
+          <!-- start .col-md-12 -->
+          <div class="col-md-12">
+            <div class="testimonial-slider">
+              <div class="testimonial">
+                <div class="testimonial__about">
+                  <div class="avatar v_middle">
+                    <img src="images/test1.jpg" alt="Testimonial Avatar" />
+                  </div>
+                  <div class="name-designation v_middle">
+                    <h4 class="name">Tubeda Pagla</h4>
+                    <span class="desig">Dispensary Owner</span>
+                  </div>
+                  <span class="lnr lnr-bubble quote-icon"></span>
                 </div>
-                <div class="name-designation v_middle">
-                  <h4 class="name">Tubeda Pagla</h4>
-                  <span class="desig">Dispensary Owner</span>
+                <div class="testimonial__text">
+                  <p>
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                    justo ut scelerisque the mattis, leo quam aliquet diam
+                    congue is the laoreet elit metus. Nunc placerat mi is id
+                    nisi interdum is mollis. Praesent the pharetra, justo ut
+                    scelerisque.
+                  </p>
                 </div>
-                <span class="lnr lnr-bubble quote-icon"></span>
               </div>
-              <div class="testimonial__text">
-                <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                  leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum
-                  is mollis. Praesent the pharetra, justo ut scelerisque.</p>
-              </div>
-            </div>
-            <!-- end /.testimonial -->
+              <!-- end /.testimonial -->
 
-            <div class="testimonial">
-              <div class="testimonial__about">
-                <div class="avatar v_middle">
-                  <img src="images/test2.jpg" alt="Testimonial Avatar">
+              <div class="testimonial">
+                <div class="testimonial__about">
+                  <div class="avatar v_middle">
+                    <img src="images/test2.jpg" alt="Testimonial Avatar" />
+                  </div>
+                  <div class="name-designation v_middle">
+                    <h4 class="name">Tarashi Hamada</h4>
+                    <span class="desig">Cultivator</span>
+                  </div>
+                  <span class="lnr lnr-bubble quote-icon"></span>
                 </div>
-                <div class="name-designation v_middle">
-                  <h4 class="name">Tarashi Hamada</h4>
-                  <span class="desig">Cultivator</span>
+                <div class="testimonial__text">
+                  <p>
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                    justo ut scelerisque the mattis, leo quam aliquet diam
+                    congue is the laoreet elit metus. Nunc placerat mi is id
+                    nisi interdum is mollis. Praesent the pharetra, justo ut
+                    scelerisque.
+                  </p>
                 </div>
-                <span class="lnr lnr-bubble quote-icon"></span>
               </div>
-              <div class="testimonial__text">
-                <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                  leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum
-                  is mollis. Praesent the pharetra, justo ut scelerisque.</p>
-              </div>
-            </div>
-            <!-- end /.testimonial -->
+              <!-- end /.testimonial -->
 
-            <div class="testimonial">
-              <div class="testimonial__about">
-                <div class="avatar v_middle">
-                  <img src="images/test1.jpg" alt="Testimonial Avatar">
+              <div class="testimonial">
+                <div class="testimonial__about">
+                  <div class="avatar v_middle">
+                    <img src="images/test1.jpg" alt="Testimonial Avatar" />
+                  </div>
+                  <div class="name-designation v_middle">
+                    <h4 class="name">Tubeda Pagla</h4>
+                    <span class="desig">Distributor</span>
+                  </div>
+                  <span class="lnr lnr-bubble quote-icon"></span>
                 </div>
-                <div class="name-designation v_middle">
-                  <h4 class="name">Tubeda Pagla</h4>
-                  <span class="desig">Distributor</span>
+                <div class="testimonial__text">
+                  <p>
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                    justo ut scelerisque the mattis, leo quam aliquet diam
+                    congue is the laoreet elit metus. Nunc placerat mi is id
+                    nisi interdum is mollis. Praesent the pharetra, justo ut
+                    scelerisque.
+                  </p>
                 </div>
-                <span class="lnr lnr-bubble quote-icon"></span>
               </div>
-              <div class="testimonial__text">
-                <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                  leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum
-                  is mollis. Praesent the pharetra, justo ut scelerisque.</p>
-              </div>
-            </div>
-            <!-- end /.testimonial -->
+              <!-- end /.testimonial -->
 
-            <div class="testimonial">
-              <div class="testimonial__about">
-                <div class="avatar v_middle">
-                  <img src="images/test2.jpg" alt="Testimonial Avatar">
+              <div class="testimonial">
+                <div class="testimonial__about">
+                  <div class="avatar v_middle">
+                    <img src="images/test2.jpg" alt="Testimonial Avatar" />
+                  </div>
+                  <div class="name-designation v_middle">
+                    <h4 class="name">Tarashi Hamada</h4>
+                    <span class="desig">Brand</span>
+                  </div>
+                  <span class="lnr lnr-bubble quote-icon"></span>
                 </div>
-                <div class="name-designation v_middle">
-                  <h4 class="name">Tarashi Hamada</h4>
-                  <span class="desig">Brand</span>
+                <div class="testimonial__text">
+                  <p>
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                    justo ut scelerisque the mattis, leo quam aliquet diam
+                    congue is the laoreet elit metus. Nunc placerat mi is id
+                    nisi interdum is mollis. Praesent the pharetra, justo ut
+                    scelerisque.
+                  </p>
                 </div>
-                <span class="lnr lnr-bubble quote-icon"></span>
               </div>
-              <div class="testimonial__text">
-                <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                  leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum
-                  is mollis. Praesent the pharetra, justo ut scelerisque.</p>
-              </div>
+              <!-- end /.testimonial -->
             </div>
-            <!-- end /.testimonial -->
+            <!-- end /.testimonial_slider -->
           </div>
-          <!-- end /.testimonial_slider -->
-
+          <!-- end /.col-md-12 -->
         </div>
-        <!-- end /.col-md-12 -->
+        <!-- end /.row -->
       </div>
-      <!-- end /.row -->
-    </div>
-    <!-- end container -->
-  </section>
-  <!--================================
+      <!-- end container -->
+    </section>
+    <!--================================
         END TESTIMONIAL
     =================================-->
 
-  <div w3-include-html="cannco-footer.html"></div>
+    <div w3-include-html="cannco-footer.html"></div>
 
-  <!--//////////////////// JS GOES HERE ////////////////-->
-  <script>
-    function includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      /* Loop through a collection of all HTML elements: */
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("w3-include-html");
-        if (file) {
-          /* Make an HTTP request using the attribute value as the file name: */
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function () {
-            if (this.readyState == 4) {
-              if (this.status == 200) {
-                elmnt.innerHTML = this.responseText;
+    <!--//////////////////// JS GOES HERE ////////////////-->
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                }
+                if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+                }
+                /* Remove the attribute, and call this function once more: */
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
               }
-              if (this.status == 404) {
-                elmnt.innerHTML = "Page not found.";
-              }
-              /* Remove the attribute, and call this function once more: */
-              elmnt.removeAttribute("w3-include-html");
-              includeHTML();
-            }
+            };
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
           }
-          xhttp.open("GET", file, true);
-          xhttp.send();
-          /* Exit the function: */
-          return;
         }
       }
-    }
-  </script>
+    </script>
 
-  <script>
-    function jsLoad() {
-      document.body.style.visibility = 'visible';
-    }
-  </script>
+    <script>
+      function jsLoad() {
+        document.body.style.visibility = "visible";
+      }
+    </script>
 
-  <script>
-    includeHTML();
-  </script>
+    <script>
+      includeHTML();
+    </script>
 
-  <!-- inject:js -->
-  <script src="js/vendor/jquery/jquery-1.12.3.js"></script>
-  <script src="js/vendor/jquery/popper.min.js"></script>
-  <script src="js/vendor/jquery/uikit.min.js"></script>
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="js/vendor/chart.bundle.min.js"></script>
-  <script src="js/vendor/grid.min.js"></script>
-  <script src="js/vendor/jquery-ui.min.js"></script>
-  <script src="js/vendor/jquery.barrating.min.js"></script>
-  <script src="js/vendor/jquery.countdown.min.js"></script>
-  <script src="js/vendor/jquery.counterup.min.js"></script>
-  <script src="js/vendor/jquery.easing1.3.js"></script>
-  <script src="js/vendor/owl.carousel.min.js"></script>
-  <script src="js/vendor/slick.min.js"></script>
-  <script src="js/vendor/tether.min.js"></script>
-  <script src="js/vendor/trumbowyg.min.js"></script>
-  <script src="js/vendor/waypoints.min.js"></script>
-  <script src="js/dashboard.js"></script>
-  <script src="js/main.js"></script>
-  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBeySPFGz7DIUTrReCRQT6HYaMM0ia0knA"></script>
-  <script src="js/map.js"></script>
-  <!-- endinject -->
-</body>
-
+    <!-- inject:js -->
+    <script src="js/vendor/jquery/jquery-1.12.3.js"></script>
+    <script src="js/vendor/jquery/popper.min.js"></script>
+    <script src="js/vendor/jquery/uikit.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/chart.bundle.min.js"></script>
+    <script src="js/vendor/grid.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/jquery.barrating.min.js"></script>
+    <script src="js/vendor/jquery.countdown.min.js"></script>
+    <script src="js/vendor/jquery.counterup.min.js"></script>
+    <script src="js/vendor/jquery.easing1.3.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+    <script src="js/vendor/slick.min.js"></script>
+    <script src="js/vendor/tether.min.js"></script>
+    <script src="js/vendor/trumbowyg.min.js"></script>
+    <script src="js/vendor/waypoints.min.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/main.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBeySPFGz7DIUTrReCRQT6HYaMM0ia0knA"></script>
+    <script src="js/map.js"></script>
+    <!-- endinject -->
+  </body>
 </html>

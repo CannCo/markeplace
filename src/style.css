@@ -2401,9 +2401,9 @@ h6 {
   width: 100%;
   top: 0;
   background-image: -webkit-gradient(linear, right top, left top, from(#b4a648), to(#b4a648));
-  background-image: -webkit-linear-gradient(right, #b4a6480%, #b4a648100%);
-  background-image: -o-linear-gradient(right, #b4a6480%, #b4a648100%);
-  background-image: linear-gradient(to left, #b4a6480%, #b4a648100%);
+  background-image: -webkit-linear-gradient(right, #b4a648, #b4a648);
+  background-image: -o-linear-gradient(right, #b4a648, #b4a648);
+  background-image: linear-gradient(to left, #b4a648, #b4a648);
   /* Fallback (could use .jpg/.png alternatively) */
   background-color: #b4a648;
   /* SVG fallback for IE 9 (could be data URI, or could use filter) */
@@ -3551,9 +3551,9 @@ h6 {
   -webkit-border-radius: 200px;
   border-radius: 200px;
   background-image: -webkit-gradient(linear, right top, left top, from(#b4a648), to(#b4a648));
-  background-image: -webkit-linear-gradient(right, #b4a6480%, #b4a648100%);
-  background-image: -o-linear-gradient(right, #b4a6480%, #b4a648100%);
-  background-image: linear-gradient(to left, #b4a6480%, #b4a648100%);
+  background-image: -webkit-linear-gradient(right, #b4a648, #b4a648);
+  background-image: -o-linear-gradient(right, #b4a648, #b4a648);
+  background-image: linear-gradient(to left, #b4a648, #b4a648);
   /* Fallback (could use .jpg/.png alternatively) */
   background-color: #b4a648;
   /* SVG fallback for IE 9 (could be data URI, or could use filter) */
@@ -4637,9 +4637,9 @@ h6 {
   visibility: hidden;
   top: 0;
   background-image: -webkit-gradient(linear, right top, left top, from(#b4a648), to(#b4a648));
-  background-image: -webkit-linear-gradient(right, #b4a6480%, #b4a648100%);
-  background-image: -o-linear-gradient(right, #b4a6480%, #b4a648100%);
-  background-image: linear-gradient(to left, #b4a6480%, #b4a648100%);
+  background-image: -webkit-linear-gradient(right, #b4a648, #b4a648);
+  background-image: -o-linear-gradient(right, #b4a648, #b4a648);
+  background-image: linear-gradient(to left, #b4a648, #b4a648);
   /* Fallback (could use .jpg/.png alternatively) */
   background-color: #b4a648;
   /* SVG fallback for IE 9 (could be data URI, or could use filter) */
