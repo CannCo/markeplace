@@ -374,7 +374,7 @@ a {
 }
 
 .scolor {
-  color: #b8a732;
+  color: #434649;
 }
 
 /* Background Image */
@@ -10113,9 +10113,11 @@ span.counter {
   color: #fff;
 }
 
-.sidebar_author .verified-status {
-  font-size: 20px;
-  color: #77de51;
+.sidebar-card .verified-status {
+  font-size: 24px;
+  color: #77de51; 
+  vertical-align: middle;
+  padding-left: 20px;
 }
 
 .sidebar_author .freelance-status {
