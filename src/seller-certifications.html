@@ -2,91 +2,90 @@
 <html lang="en">
 
 <head>
-    <div w3-include-html="head.html"></div>
+  <div w3-include-html="head.html"></div>
 </head>
 
 <body style="visibility: hidden;" onload="jsLoad()" class="dashboard-statement">
+  <div w3-include-html="cannco-header.html"></div>
 
-    <div w3-include-html="cannco-header.html"></div>
-
-    <!--================================
+  <!--================================
         START BREADCRUMB AREA
     =================================-->
-    <section class="breadcrumb-area bgimage">
-            <div class="bg_image_holder blackandwhite">
-                <img src="images/background-3.jpg" alt="">
-            </div>
-            <div class="container content_above">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="breadcrumb">
-                            <ul>
-                                <li>
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li>
-                                    <a href="category-list.html">Top Sellers</a>
-                                </li>
-                                <li class="active">
-                                    <a href="#">OG Kush</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <h1 class="page-title">OG Kush Certifications</h1>
-                    </div>
-                    <!-- end /.col-md-12 -->
-                </div>
-                <!-- end /.row -->
+  <section class="breadcrumb-area bgimage">
+    <div class="bg_image_holder blackandwhite">
+      <img src="images/background-3.jpg" alt="" />
+    </div>
+    <div class="container content_above">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="breadcrumb">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="category-list.html">Honeydew Farms</a>
+              </li>
+              <li class="active">
+                <a href="#">Dashboard</a>
+              </li>
+            </ul>
+          </div>
+          <h1 class="page-title">Honeydew Farms Dashboard</h1>
         </div>
-        <!-- end /.container --> 
-    </section>
-    <!--================================
+        <!-- end /.col-md-12 -->
+      </div>
+      <!-- end /.row -->
+    </div>
+    <!-- end /.container -->
+  </section>
+  <!--================================
         END BREADCRUMB AREA
     =================================-->
 
-    <!--================================
+  <!--================================
         START PRODUCT MENU AREA
     =================================-->
-    <section class="dashboard-area">
-        <div class="dashboard_menu_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul class="dashboard_menu">
-                            <li class="">
-                                <a href="product-dashboard.html">
-                                    <span class="lnr lnr-home"></span>Dashboard</a>
-                            </li>
-                            <li>
-                                <a href="product-insights.html">
-                                    <span class="lnr lnr-chart-bars"></span>Buying Insignts</a>
-                            </li>
-                            <li>
-                                <a href="product-waystosave.html">
-                                    <span class="lnr lnr-magic-wand"></span>Ways to Save</a>
-                            </li>
-                            <li class="active">
-                                <a href="product-certifications.html">
-                                    <span class="lnr lnr-license"></span>Certifications</a>
-                            </li>
-                            <li class="">
-                                <a href="product-provenance.html">
-                                    <span class="lnr lnr-leaf"></span>Provenance</a>
-                            </li>
-                        </ul>
-                        <!-- end /.dashboard_menu -->
-                    </div>
-                    <!-- end /.col-md-12 -->
-                </div>
-                <!-- end /.row -->
-            </div>
-            <!-- end /.container -->
+  <section class="dashboard-area">
+    <div class="dashboard_menu_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="dashboard_menu">
+              <li class="">
+                <a href="seller-public-profile.html">
+                  <span class="lnr lnr-home"></span>Seller Profile</a>
+              </li>
+              <li>
+                <a href="seller-reputation.html">
+                  <span class="lnr lnr-chart-bars"></span>Reputation</a>
+              </li>
+              <li class="actuve">
+                <a href="seller-certifications.html">
+                  <span class="lnr lnr-license"></span>Certifications</a>
+              </li>
+              <li>
+                <a href="seller-inventory.html">
+                  <span class="lnr lnr-magic-wand"></span>Inventory</a>
+              </li>
+              <li class="">
+                <a href="seller-reviews.html">
+                  <span class="lnr lnr-leaf"></span>Reviews</a>
+              </li>
+              <li class="">
+                <a href="seller-followers.html">
+                  <span class="lnr lnr-leaf"></span>Partners</a>
+              </li>
+            </ul>
+            <!-- end /.dashboard_menu -->
+          </div>
+          <!-- end /.col-md-12 -->
         </div>
-        <!-- end /.dashboard_menu_area :) -->
-    </section>
-    <!--================================
-        END PRODUCT MENU AREA
-    =================================-->
+        <!-- end /.row -->
+      </div>
+      <!-- end /.container -->
+    </div>
+    <!-- end /.dashboard_menu_area :) -->
 
     <!--================================
             START DASHBOARD AREA
@@ -333,75 +332,79 @@
             END DASHBOARD AREA
     =================================-->
 
-    <div w3-include-html="cannco-footer.html"></div>
+  <!--================================
+        END PRODUCT MENU AREA
+    =================================-->
 
-    <!--//////////////////// JS GOES HERE ////////////////-->
-    <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /* Loop through a collection of all HTML elements: */
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                    /* Make an HTTP request using the attribute value as the file name: */
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function () {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {
-                                elmnt.innerHTML = this.responseText;
-                            }
-                            if (this.status == 404) {
-                                elmnt.innerHTML = "Page not found.";
-                            }
-                            /* Remove the attribute, and call this function once more: */
-                            elmnt.removeAttribute("w3-include-html");
-                            includeHTML();
-                        }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    /* Exit the function: */
-                    return;
-                }
+  <div w3-include-html="cannco-footer.html"></div>
+
+  <!--//////////////////// JS GOES HERE ////////////////-->
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
             }
+          };
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
         }
-    </script>
+      }
+    }
+  </script>
 
-    <script>
-        function jsLoad() {
-            document.body.style.visibility = 'visible';
-        }
-    </script>
+  <script>
+    function jsLoad() {
+      document.body.style.visibility = "visible";
+    }
+  </script>
 
-    <script>
-        includeHTML();
-    </script>
+  <script>
+    includeHTML();
+  </script>
 
-    <!-- inject:js -->
-    <script src="js/vendor/jquery/jquery-1.12.3.js"></script>
-    <script src="js/vendor/jquery/popper.min.js"></script>
-    <script src="js/vendor/jquery/uikit.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/chart.bundle.min.js"></script>
-    <script src="js/vendor/grid.min.js"></script>
-    <script src="js/vendor/jquery-ui.min.js"></script>
-    <script src="js/vendor/jquery.barrating.min.js"></script>
-    <script src="js/vendor/jquery.countdown.min.js"></script>
-    <script src="js/vendor/jquery.counterup.min.js"></script>
-    <script src="js/vendor/jquery.easing1.3.js"></script>
-    <script src="js/vendor/owl.carousel.min.js"></script>
-    <script src="js/vendor/slick.min.js"></script>
-    <script src="js/vendor/tether.min.js"></script>
-    <script src="js/vendor/trumbowyg.min.js"></script>
-    <script src="js/vendor/waypoints.min.js"></script>
-    <script src="js/dashboard.js"></script>
-    <script src="js/main.js"></script>
-    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBeySPFGz7DIUTrReCRQT6HYaMM0ia0knA"></script>
-    <script src="js/map.js"></script>
-    <!-- endinject -->
+  <!-- inject:js -->
+  <script src="js/vendor/jquery/jquery-1.12.3.js"></script>
+  <script src="js/vendor/jquery/popper.min.js"></script>
+  <script src="js/vendor/jquery/uikit.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/chart.bundle.min.js"></script>
+  <script src="js/vendor/grid.min.js"></script>
+  <script src="js/vendor/jquery-ui.min.js"></script>
+  <script src="js/vendor/jquery.barrating.min.js"></script>
+  <script src="js/vendor/jquery.countdown.min.js"></script>
+  <script src="js/vendor/jquery.counterup.min.js"></script>
+  <script src="js/vendor/jquery.easing1.3.js"></script>
+  <script src="js/vendor/owl.carousel.min.js"></script>
+  <script src="js/vendor/slick.min.js"></script>
+  <script src="js/vendor/tether.min.js"></script>
+  <script src="js/vendor/trumbowyg.min.js"></script>
+  <script src="js/vendor/waypoints.min.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/main.js"></script>
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBeySPFGz7DIUTrReCRQT6HYaMM0ia0knA"></script>
+  <script src="js/map.js"></script>
+  <!-- endinject -->
 </body>
 
 </html>

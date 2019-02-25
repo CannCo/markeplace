@@ -10165,9 +10165,9 @@ span.counter {
   text-align: center;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  min-height: 124px;
+  min-height: 128px;
   padding: 22px 0 30px;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .author-info.author-info--dashboard {

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <div w3-include-html="head.html"></div>
+</head>
+
+<body style="visibility: hidden;" onload="jsLoad()" class="dashboard-statement">
+  <div w3-include-html="cannco-header.html"></div>
+
+  <!--================================
+        START BREADCRUMB AREA
+    =================================-->
+  <section class="breadcrumb-area bgimage">
+    <div class="bg_image_holder blackandwhite">
+      <img src="images/background-3.jpg" alt="" />
+    </div>
+    <div class="container content_above">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="breadcrumb">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="category-list.html">Honeydew Farms</a>
+              </li>
+              <li class="active">
+                <a href="#">Dashboard</a>
+              </li>
+            </ul>
+          </div>
+          <h1 class="page-title">Honeydew Farms Dashboard</h1>
+        </div>
+        <!-- end /.col-md-12 -->
+      </div>
+      <!-- end /.row -->
+    </div>
+    <!-- end /.container -->
+  </section>
+  <!--================================
+        END BREADCRUMB AREA
+    =================================-->
+
+  <!--================================
+        START PRODUCT MENU AREA
+    =================================-->
+  <section class="dashboard-area">
+    <div class="dashboard_menu_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="dashboard_menu">
+              <li class="">
+                <a href="seller-public-profile.html">
+                  <span class="lnr lnr-home"></span>Seller Profile</a>
+              </li>
+              <li class="active">
+                <a href="seller-reputation.html">
+                  <span class="lnr lnr-chart-bars"></span>Reputation</a>
+              </li>
+              <li class="">
+                <a href="seller-certifications.html">
+                  <span class="lnr lnr-license"></span>Certifications</a>
+              </li>
+              <li>
+                <a href="seller-inventory.html">
+                  <span class="lnr lnr-magic-wand"></span>Inventory</a>
+              </li>
+              <li class="">
+                <a href="seller-reviews.html">
+                  <span class="lnr lnr-leaf"></span>Reviews</a>
+              </li>
+              <li class="">
+                <a href="seller-followers.html">
+                  <span class="lnr lnr-leaf"></span>Partners</a>
+              </li>
+            </ul>
+            <!-- end /.dashboard_menu -->
+          </div>
+          <!-- end /.col-md-12 -->
+        </div>
+        <!-- end /.row -->
+      </div>
+      <!-- end /.container -->
+    </div>
+    <!-- end /.dashboard_menu_area :) -->
+  </section>
+
+  <!--================================
+        START SELLER AREA
+    =================================-->
+  <section class="dashboard-area">
+    <div class="dashboard_contents dashboard_statement_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="dashboard_title_area">
+                        <div class="dashboard__title">
+                            <h3>Sales Statements</h3>
+                            <div class="date_area">
+                                <form action="#">
+                                    <div class="input_with_icon">
+                                        <input type="text" class="dattaPikkara" placeholder="From">
+                                        <span class="lnr lnr-calendar-full"></span>
+                                    </div>
+
+                                    <div class="input_with_icon">
+                                        <input type="text" class="dattaPikkara" placeholder="To">
+                                        <span class="lnr lnr-calendar-full"></span>
+                                    </div>
+                                    <div class="select-wrap">
+                                        <select name="transaction_type" id="#">
+                                            <option value="all">All Transaction</option>
+                                            <option value="sale">Sale</option>
+                                            <option value="sale">Purchase</option>
+                                            <option value="credited">Withdraw</option>
+                                        </select>
+                                        <span class="lnr lnr-chevron-down"></span>
+                                    </div>
+
+                                    <button type="submit" class="btn btn--sm btn--round btn--color1">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end /.col-md-12 -->
+            </div>
+            <!-- end /.row -->
+
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="statement_info_card">
+                        <div class="info_wrap">
+                            <span class="lnr lnr-tag icon mcolorbg1"></span>
+                            <div class="info">
+                                <p>$4,563</p>
+                                <span>Total Sales</span>
+                            </div>
+                        </div>
+                        <!-- end /.info_wrap -->
+                    </div>
+                    <!-- end /.statement_info_card -->
+                </div>
+                <!-- end /.col-md-3 -->
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="statement_info_card">
+                        <div class="info_wrap">
+                            <span class="lnr lnr-cart icon mcolorbg2"></span>
+                            <div class="info">
+                                <p>$340</p>
+                                <span>Total Purchases</span>
+                            </div>
+                        </div>
+                        <!-- end /.info_wrap -->
+                    </div>
+                    <!-- end /.statement_info_card -->
+                </div>
+                <!-- end /.col-md-3 -->
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="statement_info_card">
+                        <div class="info_wrap">
+                            <span class="lnr lnr-dice icon mcolorbg3"></span>
+                            <div class="info">
+                                <p>$680</p>
+                                <span>Total Credited</span>
+                            </div>
+                        </div>
+                        <!-- end /.info_wrap -->
+                    </div>
+                    <!-- end /.statement_info_card -->
+                </div>
+                <!-- end /.col-md-3 -->
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="statement_info_card">
+                        <div class="info_wrap">
+                            <span class="lnr lnr-briefcase icon mcolorbg4"></span>
+                            <div class="info">
+                                <p>$3,690</p>
+                                <span>Total Withdraw</span>
+                            </div>
+                        </div>
+                        <!-- end /.info_wrap -->
+                    </div>
+                    <!-- end /.statement_info_card -->
+                </div>
+                <!-- end /.col-md-3 -->
+            </div>
+            <!-- end /.row -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="statement_table table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Order ID</th>
+                                    <th>Author</th>
+                                    <th>Detail</th>
+                                    <th>Type</th>
+                                    <th>Price</th>
+                                    <th>Earning</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>09 Jul 2017</td>
+                                    <td>MP810094</td>
+                                    <td class="author">AazzTech</td>
+                                    <td class="detail">
+                                        <a href="single-product.html">Visibility Manager Subscriptions</a>
+                                    </td>
+                                    <td class="type">
+                                        <span class="sale">Sale</span>
+                                    </td>
+                                    <td>$49</td>
+                                    <td class="earning">$24.50</td>
+                                    <td class="action">
+                                        <a href="invoice.html">view</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>03 Jul 2017</td>
+                                    <td>MP810094</td>
+                                    <td class="author">Markober</td>
+                                    <td class="detail">
+                                        <a href="single-product.html">Martplace Coffee Shop</a>
+                                    </td>
+                                    <td class="type">
+                                        <span class="purchase">Purchase</span>
+                                    </td>
+                                    <td>$30</td>
+                                    <td class="earning subtract">-$30</td>
+                                    <td class="action">
+                                        <a href="invoice.html">view</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>09 Jul 2017</td>
+                                    <td>MP810094</td>
+                                    <td class="author">Themexylum</td>
+                                    <td class="detail">
+                                        <a href="single-product.html">MartPlace Extension Bundle</a>
+                                    </td>
+                                    <td class="type">
+                                        <span class="sale">Sale</span>
+                                    </td>
+                                    <td>$49</td>
+                                    <td class="earning">$24.50</td>
+                                    <td class="action">
+                                        <a href="invoice.html">view</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>05 Apr 2017</td>
+                                    <td>MP810094</td>
+                                    <td class="author">AazzTech</td>
+                                    <td class="detail">
+                                        <a href="single-product.html">Stack - Responsive Bootstrap 4 Admin Template</a>
+                                    </td>
+                                    <td class="type">
+                                        <span class="sale">Sale</span>
+                                    </td>
+                                    <td>$20</td>
+                                    <td class="earning">$10</td>
+                                    <td class="action">
+                                        <a href="invoice.html">view</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>25 Dec 2016</td>
+                                    <td>MP810394</td>
+                                    <td class="author text-center" colspan="2">Via Payoneer</td>
+                                    <td class="type">
+                                        <span class="credited">Credited</span>
+                                    </td>
+                                    <td>$49</td>
+                                    <td class="earning">$24.50</td>
+                                    <td class="action">
+                                        <a href="invoice.html">view</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>09 Jul 2017</td>
+                                    <td>MP810094</td>
+                                    <td class="author text-center" colspan="2">Via Paypal</td>
+                                    <td class="type">
+                                        <span class="withdrawal">Withdraw</span>
+                                    </td>
+                                    <td>$350</td>
+                                    <td class="earning subtract">-$350</td>
+                                    <td class="action">
+                                        <a href="invoice.html">view</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>0 Feb 2017</td>
+                                    <td>MP810094</td>
+                                    <td class="author">Artcorner</td>
+                                    <td class="detail">
+                                        <a href="single-product.html">Rida - Applanding Onepage </a>
+                                    </td>
+                                    <td class="type">
+                                        <span class="purchase">Purchase</span>
+                                    </td>
+                                    <td>$30</td>
+                                    <td class="earning subtract">-$30</td>
+                                    <td class="action">
+                                        <a href="invoice.html">view</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>26 May 2016</td>
+                                    <td>MP81024</td>
+                                    <td class="author">Awesomaiya</td>
+                                    <td class="detail">
+                                        <a href="single-product.html">Table Generator extension bundle</a>
+                                    </td>
+                                    <td class="type">
+                                        <span class="sale">Sale</span>
+                                    </td>
+                                    <td>$49</td>
+                                    <td class="earning">$24.50</td>
+                                    <td class="action">
+                                        <a href="invoice.html">view</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>26 Aug 2017</td>
+                                    <td>MP810654</td>
+                                    <td class="author">Codepoets</td>
+                                    <td class="detail">
+                                        <a href="single-product.html">Kamla One page portfolio</a>
+                                    </td>
+                                    <td class="type">
+                                        <span class="sale">Sale</span>
+                                    </td>
+                                    <td>$49</td>
+                                    <td class="earning">$24.50</td>
+                                    <td class="action">
+                                        <a href="invoice.html">view</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>09 Jul 2017</td>
+                                    <td>MP810094</td>
+                                    <td class="author">Designing</td>
+                                    <td class="detail">
+                                        <a href="single-product.html">Ajaxified karma loader</a>
+                                    </td>
+                                    <td class="type">
+                                        <span class="purchase">Purchased</span>
+                                    </td>
+                                    <td>$29</td>
+                                    <td class="earning">-$29</td>
+                                    <td class="action">
+                                        <a href="invoice.html">view</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="pagination-area pagination-area2">
+                            <nav class="navigation pagination " role="navigation">
+                                <div class="nav-links">
+                                    <a class="prev page-numbers" href="#">
+                                        <span class="lnr lnr-arrow-left"></span>
+                                    </a>
+                                    <a class="page-numbers current" href="#">1</a>
+                                    <a class="page-numbers" href="#">2</a>
+                                    <a class="page-numbers" href="#">3</a>
+                                    <a class="next page-numbers" href="#">
+                                        <span class="lnr lnr-arrow-right"></span>
+                                    </a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end /.row -->
+        </div>
+        <!-- end /.container -->
+    </div>
+    <!-- end /.dashboard_menu_area -->
+  </section>
+  <!--================================
+        END SELLER AREA
+    =================================-->
+
+
+  <!--================================
+        END PRODUCT MENU AREA
+    =================================-->
+
+  <div w3-include-html="cannco-footer.html"></div>
+
+  <!--//////////////////// JS GOES HERE ////////////////-->
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          };
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+  </script>
+
+  <script>
+    function jsLoad() {
+      document.body.style.visibility = "visible";
+    }
+  </script>
+
+  <script>
+    includeHTML();
+  </script>
+
+  <!-- inject:js -->
+  <script src="js/vendor/jquery/jquery-1.12.3.js"></script>
+  <script src="js/vendor/jquery/popper.min.js"></script>
+  <script src="js/vendor/jquery/uikit.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/chart.bundle.min.js"></script>
+  <script src="js/vendor/grid.min.js"></script>
+  <script src="js/vendor/jquery-ui.min.js"></script>
+  <script src="js/vendor/jquery.barrating.min.js"></script>
+  <script src="js/vendor/jquery.countdown.min.js"></script>
+  <script src="js/vendor/jquery.counterup.min.js"></script>
+  <script src="js/vendor/jquery.easing1.3.js"></script>
+  <script src="js/vendor/owl.carousel.min.js"></script>
+  <script src="js/vendor/slick.min.js"></script>
+  <script src="js/vendor/tether.min.js"></script>
+  <script src="js/vendor/trumbowyg.min.js"></script>
+  <script src="js/vendor/waypoints.min.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/main.js"></script>
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBeySPFGz7DIUTrReCRQT6HYaMM0ia0knA"></script>
+  <script src="js/map.js"></script>
+  <!-- endinject -->
+</body>
+
+</html>
