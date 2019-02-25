@@ -370,11 +370,11 @@ a {
 	-- GENERAL
 *****************************/
 .pcolor {
-  color: #b4a648;
+  color: #b8a732;
 }
 
 .scolor {
-  color: #b4a648;
+  color: #b8a732;
 }
 
 /* Background Image */
@@ -10113,6 +10113,11 @@ span.counter {
   color: #fff;
 }
 
+.sidebar_author .verified-status {
+  font-size: 20px;
+  color: #77de51;
+}
+
 .sidebar_author .freelance-status {
   padding: 20px 30px;
 }
@@ -10359,7 +10364,7 @@ span.counter {
   -webkit-box-shadow: 0 3px 10px rgba(121, 135, 150, 0.1);
   box-shadow: 0 3px 10px rgba(121, 135, 150, 0.1);
   border-bottom: 1px solid lightgrey;
-  background-color: rgb(86,89,91,0);
+  background-color: rgb(86, 89, 91, 0);
 
 }
 
