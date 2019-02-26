@@ -10117,7 +10117,7 @@ span.counter {
   font-size: 24px;
   color: #77de51; 
   vertical-align: middle;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .sidebar_author .freelance-status {
@@ -10366,7 +10366,7 @@ span.counter {
   -webkit-box-shadow: 0 3px 10px rgba(121, 135, 150, 0.1);
   box-shadow: 0 3px 10px rgba(121, 135, 150, 0.1);
   border-bottom: 1px solid lightgrey;
-  background-color: rgb(86, 89, 91, 0);
+  background-color: #fff;
 
 }
 
@@ -15090,6 +15090,12 @@ span.counter {
   .author-card .author-infos .author-btn .btn+.btn {
     margin-left: 0;
     margin-top: 10px;
+  }
+
+    /* AUTHOR PAGE */
+    .author-card .author-infos .author-btn .btn+.btn {
+      margin-left: 0;
+      margin-top: 10px;
   }
 
   /* USER AREA */

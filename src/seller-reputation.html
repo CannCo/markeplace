@@ -58,7 +58,7 @@
               </li>
               <li class="active">
                 <a href="seller-reputation.html">
-                  <span class="lnr lnr-chart-bars"></span>Reputation</a>
+                  <span class="lnr lnr-diamond"></span>Reputation</a>
               </li>
               <li class="">
                 <a href="seller-certifications.html">
@@ -66,15 +66,11 @@
               </li>
               <li>
                 <a href="seller-inventory.html">
-                  <span class="lnr lnr-magic-wand"></span>Inventory</a>
+                  <span class="lnr lnr-layers"></span>Inventory</a>
               </li>
               <li class="">
                 <a href="seller-reviews.html">
                   <span class="lnr lnr-leaf"></span>Reviews</a>
-              </li>
-              <li class="">
-                <a href="seller-followers.html">
-                  <span class="lnr lnr-leaf"></span>Partners</a>
               </li>
             </ul>
             <!-- end /.dashboard_menu -->
@@ -98,7 +94,7 @@
                 <div class="col-md-12">
                     <div class="dashboard_title_area">
                         <div class="dashboard__title">
-                            <h3>Sales Statements</h3>
+                            <h3>Reputation History</h3>
                             <div class="date_area">
                                 <form action="#">
                                     <div class="input_with_icon">
@@ -112,10 +108,11 @@
                                     </div>
                                     <div class="select-wrap">
                                         <select name="transaction_type" id="#">
-                                            <option value="all">All Transaction</option>
-                                            <option value="sale">Sale</option>
-                                            <option value="sale">Purchase</option>
-                                            <option value="credited">Withdraw</option>
+                                            <option value="all">All Types</option>
+                                            <option value="sale">Consumer Surveys</option>
+                                            <option value="sale">Merchant Surveys</option>
+                                            <option value="sale">Community Awards</option>
+                                            <option value="credited">Transaction History</option>
                                         </select>
                                         <span class="lnr lnr-chevron-down"></span>
                                     </div>
@@ -131,67 +128,42 @@
             <!-- end /.row -->
 
             <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="statement_info_card">
-                        <div class="info_wrap">
-                            <span class="lnr lnr-tag icon mcolorbg1"></span>
-                            <div class="info">
-                                <p>$4,563</p>
-                                <span>Total Sales</span>
-                            </div>
-                        </div>
-                        <!-- end /.info_wrap -->
-                    </div>
-                    <!-- end /.statement_info_card -->
-                </div>
-                <!-- end /.col-md-3 -->
 
-                <div class="col-lg-3 col-md-3">
-                    <div class="statement_info_card">
-                        <div class="info_wrap">
-                            <span class="lnr lnr-cart icon mcolorbg2"></span>
-                            <div class="info">
-                                <p>$340</p>
-                                <span>Total Purchases</span>
-                            </div>
+                <div class="col-md-3 col-sm-3">
+                    <a href="seller-reputation.html">
+                        <div class="author-info mcolorbg1">
+                        <p>Transaction<br>Success Rate</p>
+                        <h3>92%</h3>
                         </div>
-                        <!-- end /.info_wrap -->
-                    </div>
-                    <!-- end /.statement_info_card -->
+                    </a>
                 </div>
-                <!-- end /.col-md-3 -->
+                
+                <div class="col-md-3 col-sm-3">
+                    <a href="seller-reputation.html">
+                        <div class="author-info mcolorbg1">
+                        <p>Repeat<br>Buyers</p>
+                        <h3>182</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <a href="seller-reputation.html">
+                        <div class="author-info mcolorbg1">
+                        <p>Consecutive<br>5 Star Reviews</p>
+                        <h3>22</h3>
+                        </div>
+                    </a>
+                </div>           
 
-                <div class="col-lg-3 col-md-3">
-                    <div class="statement_info_card">
-                        <div class="info_wrap">
-                            <span class="lnr lnr-dice icon mcolorbg3"></span>
-                            <div class="info">
-                                <p>$680</p>
-                                <span>Total Credited</span>
-                            </div>
+                <div class="col-md-3 col-sm-3">
+                    <a href="seller-reputation.html">
+                        <div class="author-info mcolorbg1">
+                        <p>Net Promoter<br>Score</p>
+                        <h3>9.2</h3>
                         </div>
-                        <!-- end /.info_wrap -->
-                    </div>
-                    <!-- end /.statement_info_card -->
+                    </a>
                 </div>
-                <!-- end /.col-md-3 -->
-
-                <div class="col-lg-3 col-md-3">
-                    <div class="statement_info_card">
-                        <div class="info_wrap">
-                            <span class="lnr lnr-briefcase icon mcolorbg4"></span>
-                            <div class="info">
-                                <p>$3,690</p>
-                                <span>Total Withdraw</span>
-                            </div>
-                        </div>
-                        <!-- end /.info_wrap -->
-                    </div>
-                    <!-- end /.statement_info_card -->
-                </div>
-                <!-- end /.col-md-3 -->
             </div>
-            <!-- end /.row -->
 
             <div class="row">
                 <div class="col-md-12">
@@ -201,8 +173,8 @@
                                 <tr>
                                     <th>Date</th>
                                     <th>Order ID</th>
-                                    <th>Author</th>
-                                    <th>Detail</th>
+                                    <th>Buyer</th>
+                                    <th>Description</th>
                                     <th>Type</th>
                                     <th>Price</th>
                                     <th>Earning</th>
