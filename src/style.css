@@ -1222,16 +1222,27 @@ h4 {
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 h6 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /*****************************
 	--- MENU
 *****************************/
+.menu-area {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+.mainmenu {
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
 .top-menu-area .logo {
   height: 100%;
   display: -webkit-box;
@@ -1255,7 +1266,7 @@ h6 {
 
 .menu--style1 .mainmenu,
 .menu--style1 .mainmenu__menu {
-  background: #b4a648;
+  background: #fff;
 }
 
 .menu--style1 .mainmenu__menu ul li:hover a {
@@ -2535,6 +2546,7 @@ h6 {
 .product-desc .product_title h4 {
   font-size: 20px;
   text-transform: capitalize;
+  letter-spacing: 0.02em;
   font-weight: 500;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -7820,6 +7832,7 @@ ul.nav-tabs.nav--tabs2 li a::before {
   position: relative;
   display: inline-block;
   vertical-align: middle;
+  width: 50px;
 }
 
 .author__avatar span {
@@ -7903,15 +7916,15 @@ ul.nav-tabs.nav--tabs2 li a::before {
 }
 
 .author__notification_area ul li .notification_count.noti {
-  background: #ff6a6d;
+  background: #e91e63;
 }
 
 .author__notification_area ul li .notification_count.msg {
-  background: #77de51;
+  background: #0486ff;
 }
 
 .author__notification_area ul li .notification_count.purch {
-  background: #b4a648;
+  background: #4CAF50;
 }
 
 .author-author__info {
@@ -8391,7 +8404,7 @@ ul.nav-tabs.nav--tabs2 li a::before {
 }
 
 .products {
-  background: #eff1f5;
+  background: #fff;
 }
 
 .home2 .product__title a {
