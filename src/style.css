@@ -93,6 +93,10 @@
   width: 220px;
 }
 
+.row {
+  width: 80%;
+}
+
 .blackandwhite {
   filter: grayscale(100%);
 }
@@ -14884,6 +14888,7 @@ span.counter {
 *****************************/
 /*this is responsive scss*/
 /* 992 TO 1199 */
+
 @media (min-width: 992px) and (max-width: 1199px) {
 
   /* menu area scss */
