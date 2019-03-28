@@ -93,10 +93,6 @@
   width: 220px;
 }
 
-.row {
-  width: 80%;
-}
-
 .blackandwhite {
   filter: grayscale(100%);
 }
@@ -1763,7 +1759,7 @@ h6 {
   width: 7px;
   -webkit-border-radius: 200px;
   border-radius: 200px;
-  background: #ç;
+  background: #fff;
   vertical-align: middle;
   left: 0;
   top: 50%;
