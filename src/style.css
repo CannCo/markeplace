@@ -89,6 +89,12 @@
 	-- RESET
 *****************************/
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .cannco-logo {
   width: 220px;
 }
@@ -495,7 +501,7 @@ a {
 }
 
 .section--padding2 {
-  padding: 70px 0 120px;
+  padding: 30px 0 100px;
 }
 
 .section-title {
@@ -1218,15 +1224,20 @@ h3 {
 }
 
 h4 {
+  letter-spacing: 0.01em;
   font-size: 20px;
 }
 
 h5 {
   font-size: 18px;
+  letter-spacing: 0.02em;
 }
 
 h6 {
   font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 /*****************************
@@ -1240,7 +1251,7 @@ h6 {
 
 .mainmenu {
   background: #fff;
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .top-menu-area .logo {
@@ -1354,6 +1365,7 @@ h6 {
 .item-preview .card-title {
   padding: 30px;
   border-bottom: 1px solid #ececec;
+  margin-bottom: 0px;
 }
 
 .product--sidebar .sidebar-card,
@@ -1369,8 +1381,10 @@ h6 {
   background: #fff;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
-  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+  /* -webkit-box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1); */
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+  /* box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1); */
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
   margin-bottom: 10px;
 }
 
@@ -1637,6 +1651,10 @@ h6 {
 .sidebar--single-product .sidebar-card.card--pricing2 .purchase-button,
 .sidebar--single-product .card--pricing2.item-preview .purchase-button {
   padding: 0 30px 30px;
+}
+
+.card-title {
+  margin-bottom: 0;
 }
 
 .sidebar--single-product .card-title {
@@ -2383,9 +2401,19 @@ h6 {
   background: #fff;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+  /*
   -webkit-box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
-  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
-  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1); 
+  */
+  -webkit-box-shadow: 
+    0px 1px 3px 0px rgba(0,0,0,0.2), 
+    0px 1px 1px 0px rgba(0,0,0,0.14), 
+    0px 2px 1px -1px rgba(0,0,0,0.12); 
+  box-shadow: 
+    0px 1px 3px 0px rgba(0,0,0,0.2), 
+    0px 1px 1px 0px rgba(0,0,0,0.14), 
+    0px 2px 1px -1px rgba(0,0,0,0.12); 
+  margin-bottom: 10px;
 }
 
 .product .product__thumbnail {
@@ -3361,6 +3389,10 @@ h6 {
     width: 750px;
     margin: 30px auto;
   }
+  .container {
+    width: 95%;
+    max-width: none;
+  }
 }
 
 .modal .modal-body {
@@ -3747,7 +3779,7 @@ h6 {
 }
 
 .section--padding2 {
-  padding: 70px 0 120px;
+  padding: 30px 0 100px;
 }
 
 .section-title {
@@ -5046,7 +5078,7 @@ h6 {
 }
 
 .section--padding2 {
-  padding: 70px 0 120px;
+  padding: 30px 0 100px;
 }
 
 .section-title {
@@ -6663,7 +6695,7 @@ div#ui-datepicker-div tbody tr td a:hover {
 }
 
 .section--padding2 {
-  padding: 70px 0 120px;
+  padding: 30px 0 100px;
 }
 
 .section-title {
@@ -8404,7 +8436,7 @@ ul.nav-tabs.nav--tabs2 li a::before {
 }
 
 .products {
-  background: #fff;
+  background: rgb(240, 240, 240);
 }
 
 .home2 .product__title a {
@@ -9408,12 +9440,13 @@ span.counter {
   position: relative;
   -webkit-box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
   box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+  background: #fff;
 }
 
 .filter-bar .filter__option {
   display: inline-block;
   vertical-align: middle;
-  padding: 29px 0;
+  padding: 14px 0;
 }
 
 .filter-bar .filter__option p {
@@ -15856,7 +15889,8 @@ span.counter {
 /* 767 */
 @media screen and (max-width: 767px) {
   .container {
-    width: 450px;
+    width: 95%;
+    max-width: none;
   }
 
   .dashboard-area.dashboard_purchase .dashboard_menu,
@@ -17030,7 +17064,8 @@ span.counter {
   }
 
   .container {
-    width: 320px;
+    width: 95%;
+    max-width: none;
   }
 
   /* BREADCRUMB */
