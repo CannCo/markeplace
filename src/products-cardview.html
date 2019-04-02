@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div>
+        <div id="head"></div>
+    </div>
+</head>
+
+<body style="visibility: hidden;" onload="jsLoad()" class="category-list-page">
+
+    <div>
+        <div id="cannco-header"></div>
+    </div>
+
+    <div id="products-header-wrapper">
+        <div id="products-header"></div>
+    </div>
+
+    <!--================================
+        START FILER AND PRODUCTS 
+    =================================-->
+    <section class="products section--padding2">
+        <!-- start container -->
+        <div id="test" class="container">
+            <!-- start .row -->
+            <div class="row">
+
+                <!-- start .col-md-3 FILTER COLUMN -->
+                <div class="col-lg-3">
+                    <div>
+                        <div id="products-faceted-filter-column"></div>
+                    </div>
+                </div>
+                <!-- end col-md-3 FILTER COLUMN -->
+
+                <!-- start col-md-9 -->
+                <div id="products-cardview"></div>
+                <!-- end /.col-md-9 -->
+            </div>
+            <!-- end /.row -->
+
+            <!-- start PAGE NUMBERS -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pagination-area pull-right">
+                        <nav class="navigation pagination" role="navigation">
+                            <div class="nav-links">
+                                <a class="prev page-numbers" href="#">
+                                    <span class="lnr lnr-arrow-left"></span>
+                                </a>
+                                <a class="page-numbers current" href="#">1</a>
+                                <a class="page-numbers" href="#">2</a>
+                                <a class="page-numbers" href="#">3</a>
+                                <a class="next page-numbers" href="#">
+                                    <span class="lnr lnr-arrow-right"></span>
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- end /.row -->
+        </div>
+        <!-- end /.container -->
+    </section>
+    <!--================================
+        END FILTER AND PRODUCTS 
+    =================================-->
+    <div>
+        <div id="product-rec-more"></div>
+    </div>
+
+    <div>
+        <div id="product-rec-bettermargins"></div>
+    </div>
+
+    <div>
+        <div id="cannco-footer"></div>
+    </div>
+
+    <!--//////////////////// JS GOES HERE ////////////////-->
+
+    <script>
+        var myArray = [{
+                "display": "JavaScript Tutorial",
+                "url": "https://www.w3schools.com/js/default.asp"
+            },
+            {
+                "display": "HTML Tutorial",
+                "url": "https://www.w3schools.com/html/default.asp"
+            },
+            {
+                "display": "CSS Tutorial",
+                "url": "https://www.w3schools.com/css/default.asp"
+            }
+        ];
+
+        function productCard(arr) {
+            var out = "";
+            var i;
+            for (i = 0; i < 5; i++) {
+
+                out +=
+                    '<div class="col-lg-4 col-md-6"> ' +
+                    '<div class="product product--card product--card-small"> ' +
+                    '   <div class="product__thumbnail"> ' +
+                    '       <img src="images/p1.jpg" alt="Product Image"> ' +
+                    '       <div class="prod_btn"> ' +
+                    '           <a href="product-dashboard.html" class="transparent btn--sm btn--round">More Info</a> ' +
+                    '           <a href="cart.html" target="_blank" class="transparent btn--sm btn--round">Add to Cart</a> ' +
+                    '       </div>' +
+                    '   </div>' +
+                    ' ' +
+                    '   <div class="product-desc"> ' +
+                    '       <a href="#" class="product_title"> ' +
+                    '           <h4>OG Kush</h4> ' +
+                    '           <p>Relaxing, droopy-eyed, and couch locking.</p> ' +
+                    '       </a> ' +
+                    ' ' +
+                    '       <ul class="titlebtm"> ' +
+                    ' ' +
+                    '           <li class="mb-2"> ' +
+                    '               <img class="auth-img" src="images/auth3.jpg" alt="author image"> ' +
+                    '               <p><a href="#">Honeydew</a></p> ' +
+                    '               <span class="lnr lnr-book"></span>Plugin</a> ' +
+                    '           </li> ' +
+                    ' ' +
+                    '           <li class="product_cat"> ' +
+                    '               <a href="product-certifications.html"> ' +
+                    '               <span class="lnr lnr-book"></span>THC/CBD 19.28/1.02</a> ' +
+                    '           </li> ' +
+                    ' ' +
+                    '           <li class="product_cat"> ' +
+                    '               <a href="badges.html"> ' +
+                    '               <span class="lnr lnr-menu-circle"></span>Indica | Low Inventory</a> ' +
+                    '           </li> ' +
+                    ' ' +
+                    '           <li class="out_of_class_name"> ' +
+                    '               <div class="sell"> ' +
+                    '                   <p> ' +
+                    '                       <span class="lnr lnr-cart"></span> ' +
+                    '                       <span>176</span> ' +
+                    '                   </p> ' +
+                    '               </div> ' +
+                    '               <div class="rating product--rating"> ' +
+                    '                   <ul> ' +
+                    '                       <li><span class="fa fa-star"></span></li> ' +
+                    '                       <li><span class="fa fa-star"></span></li> ' +
+                    '                       <li><span class="fa fa-star"></span></li> ' +
+                    '                       <li><span class="fa fa-star"></span></li> ' +
+                    '                       <li><span class="fa fa-star-half-o"></span></li> ' +
+                    '                   </ul> ' +
+                    '                   <span>(823)</span> ' +
+                    '               </div> ' +
+                    '           </li> ' +
+                    ' ' +
+                    '       </ul> ' +
+                    ' ' +
+                    '   </div> ' +
+                    '   <!-- end /.product-desc --> ' +
+                    ' ' +
+                    '   <div class="product-purchase"> ' +
+                    '       <div class="price_love"> ' +
+                    '           <span>$1049/lb</span> ' +
+                    '       </div> ' +
+                    '           <a href="#"> ' +
+                    '           <span class="lnr lnr-book"></span>Plugin</a> ' +
+                    '       </div> ' +
+                    '       <!-- end /.product-purchase --> ' +
+                    '   </div> ' +
+                    '   <!-- end /.single-product --> ' +
+                    ' ' +
+                    '</div> ' +
+                    '</div> ' +
+                    '<!-- end /.col-md-4 --> ';
+            }
+            document.getElementById("products-cardview").innerHTML = out;
+        }
+    </script>
+
+    <script>
+        function jsLoad() {
+            productCard({});
+            document.body.style.visibility = 'visible';
+        }
+
+        /*         // When the user scrolls the page, execute myFunction
+                window.onscroll = function () { myFunction() };
+
+                // Get the navbar
+                var navbar = document.getElementById("NA");
+
+                // Get the offset position of the navbar
+                var sticky = navbar.offsetTop;
+
+                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                } */
+    </script>
+
+    <!-- inject:js -->
+    <script src="js/vendor/jquery/jquery-1.12.3.js"></script>
+    <script src="js/vendor/jquery/popper.min.js"></script>
+    <script src="js/vendor/jquery/uikit.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/chart.bundle.min.js"></script>
+    <script src="js/vendor/grid.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/jquery.barrating.min.js"></script>
+    <script src="js/vendor/jquery.countdown.min.js"></script>
+    <script src="js/vendor/jquery.counterup.min.js"></script>
+    <script src="js/vendor/jquery.easing1.3.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+    <script src="js/vendor/slick.min.js"></script>
+    <script src="js/vendor/tether.min.js"></script>
+    <script src="js/vendor/trumbowyg.min.js"></script>
+    <script src="js/vendor/waypoints.min.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/main.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBeySPFGz7DIUTrReCRQT6HYaMM0ia0knA"></script>
+    <script src="js/map.js"></script>
+    <!-- endinject -->
+
+    <script>
+        $(document).ready(function () {
+            $('#head').load("head.html");
+            $('#cannco-header').load("cannco-header.html");
+            $('#products-header').load("products-header.html");
+            $('#products-faceted-filter-column').load("products-faceted-filter-column.html");
+            $('#products-multiseller-listview').load("products-multiseller-listview.html");
+            $('#product-rec-more').load("product-rec-more.html");
+            $('#product-rec-bettermargins').load("product-rec-bettermargins.html");
+            $('#cannco-footer').load("cannco-footer.html");
+        });
+    </script>
+
+</body>
+
+</html>
