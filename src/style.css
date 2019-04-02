@@ -1382,10 +1382,16 @@ h6 {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   /* -webkit-box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1); */
-  -webkit-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.4), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 
+    0px 1px 3px 1px rgba(0, 0, 0, 0.4), 
+    0px 1px 3px 0px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px -1px rgba(0, 0, 0, 0.12);
   /* box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1); */
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-  margin-bottom: 10px;
+  box-shadow: 
+    0px 1px 3px 0px rgba(0, 0, 0, 0.4), 
+    0px 1px 3px 0px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  margin-bottom: 14px;
 }
 
 .product--sidebar .sidebar-card .card-title,
@@ -2407,13 +2413,13 @@ h6 {
   */
   -webkit-box-shadow:
     0px 1px 3px 0px rgba(0, 0, 0, 0.4),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.14),
     0px 2px 1px -1px rgba(0, 0, 0, 0.12);
   box-shadow:
     0px 1px 3px 0px rgba(0, 0, 0, 0.4),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.14),
     0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .product .product__thumbnail {
@@ -3391,7 +3397,9 @@ h6 {
   }
 
   .container {
-    width: 95%;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
     max-width: none;
   }
 }
@@ -8424,7 +8432,7 @@ ul.nav-tabs.nav--tabs2 li a::before {
 	START PRODUCTS AREA CSS
 *****************************/
 .products {
-  background: #fff;
+  background: rgba(68, 70, 73, .1);
 }
 
 .home1 .products {
@@ -9440,7 +9448,7 @@ span.counter {
 .filter-area {
   position: relative;
   -webkit-box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
-  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, .2);
   background: #fff;
 }
 
@@ -15890,7 +15898,9 @@ span.counter {
 /* 767 */
 @media screen and (max-width: 767px) {
   .container {
-    width: 95%;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
     max-width: none;
   }
 
@@ -17065,7 +17075,9 @@ span.counter {
   }
 
   .container {
-    width: 95%;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
     max-width: none;
   }
 
