@@ -95,7 +95,7 @@
   width: 100%;
 }
 
-.cannco-logo {
+.CompliantCash-logo {
   width: 280px;
 }
 
@@ -441,19 +441,19 @@ a {
 }
 
 .mcolor1 {
-  color: #77de51;
+  color: #00A0C2;
 }
 
 .mcolor2 {
-  color: #feb71d;
+  color: #005473;
 }
 
 .mcolor3 {
-  color: #58c9e9;
+  color: #00314E;
 }
 
 .mcolor4 {
-  color: #ff6a6d;
+  color: #007999;
 }
 
 .pcolorbg {
@@ -465,19 +465,19 @@ a {
 }
 
 .mcolorbg1 {
-  background: #8eb87f;
+  background: #77de51;
 }
 
 .mcolorbg2 {
-  background: #d6b368;
+  background: #4FBF84;
 }
 
 .mcolorbg3 {
-  background: #75a8b6;
+  background: #4FBF84;
 }
 
 .mcolorbg4 {
-  background: #b87071;
+  background: #4FBF84;
 }
 
 /* tooltip */
@@ -2625,7 +2625,7 @@ h6 {
 }
 
 .product-purchase .price_love>span {
-  background: rgba(180, 166, 72, 0.1);
+  background: rgba(1, 201, 236, 0.3);
   line-height: 32px;
   display: inline-block;
   padding: 0 15px;
@@ -3764,7 +3764,7 @@ h6 {
 }
 
 .mcolorbg4 {
-  background: #b87071;
+  background: #4FBF84;
 }
 
 /* tooltip */
@@ -5063,7 +5063,7 @@ h6 {
 }
 
 .mcolorbg4 {
-  background: #b87071;
+  background: #4FBF84;
 }
 
 /* tooltip */
@@ -6668,7 +6668,7 @@ div#ui-datepicker-div tbody tr td a:hover {
 }
 
 .mcolorbg1 {
-  background: #8eb87f;
+  background: #01c9ec; 
 }
 
 .mcolorbg2 {
@@ -6680,7 +6680,7 @@ div#ui-datepicker-div tbody tr td a:hover {
 }
 
 .mcolorbg4 {
-  background: #b87071;
+  background: #008952;
 }
 
 /* tooltip */
@@ -7957,15 +7957,15 @@ ul.nav-tabs.nav--tabs2 li a::before {
 }
 
 .author__notification_area ul li .notification_count.noti {
-  background: #e91e63;
+  background: #01C9EC;
 }
 
 .author__notification_area ul li .notification_count.msg {
-  background: #0486ff;
+  background: #01C9EC;
 }
 
 .author__notification_area ul li .notification_count.purch {
-  background: #4CAF50;
+  background: #01C9EC;
 }
 
 .author-author__info {

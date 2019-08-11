@@ -29,7 +29,7 @@
             function getData(i) {
                 return (
                     [chart.config.type === "line" ? datasets[i].borderColor : datasets[0].backgroundColor[i],
-                        chart.config.type === "line" ? datasets[i].label : data.labels[i]
+                    chart.config.type === "line" ? datasets[i].label : data.labels[i]
                     ]);
             }
 
@@ -86,21 +86,21 @@
             data: {
                 labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
                 datasets: [{
-                        label: "Retail",
-                        backgroundColor: 'rgba(193, 183, 120, .5)',
-                        borderColor: '#c1b778',
-                        data: [150, 170, 250, 230, 270, 280, 300, 290, 320, 320, 330, 350],
-                        pointBackgroundColor: 'rgba(193, 183, 120, .5)',
-                        pointBorderColor: '#fff'
-                    },
-                    {
-                        label: "Wholesale",
-                        backgroundColor: 'rgba(67, 70, 73, .5)',
-                        borderColor: '#434649',
-                        data: [100, 130, 180, 180, 190, 220, 240, 240, 250, 240, 230, 220],
-                        pointBackgroundColor: 'rgba(67, 70, 73, 1)',
-                        pointBorderColor: '#fff'
-                    }
+                    label: "Retail",
+                    backgroundColor: 'rgba(1, 201, 236, .25)',
+                    borderColor: '#01c9ec',
+                    data: [150, 170, 250, 230, 270, 280, 300, 290, 320, 320, 330, 350],
+                    pointBackgroundColor: 'rgba(1, 201,236, 1)',
+                    pointBorderColor: '#fff'
+                },
+                {
+                    label: "Wholesale",
+                    backgroundColor: 'rgba(1,201, 236, .5)',
+                    borderColor: '#01c9ec',
+                    data: [100, 130, 180, 180, 190, 220, 240, 240, 250, 240, 230, 220],
+                    pointBackgroundColor: 'rgba(1, 201,236, 1)',
+                    pointBorderColor: '#fff'
+                }
                 ]
             },
 
@@ -210,29 +210,29 @@
             data: {
                 labels: months,
                 datasets: [{
-                        label: "2015",
-                        data: [3, 2.9, 2.7, 3.5, 4, 3.8, 3.7, 3.5, 4, 4.5, 4.3, 4.2],
-                        fill: false,
-                        borderColor: '#7347c1',
-                        lineTension: 0,
-                        pointBorderColor: '#7347c1'
-                    },
-                    {
-                        label: "2016",
-                        data: [4, 3.9, 3.7, 4.5, 5, 5.8, 5.1, 4.5, 5.7, 7, 6.25, 5.9],
-                        fill: false,
-                        borderColor: '#0674ec',
-                        lineTension: 0,
-                        pointBorderColor: '#0674ec'
-                    },
-                    {
-                        label: "2017",
-                        data: [5, 5.5, 5.9, 5.5, 5, 4.8, 5.8, 6.5, 6.1, 5.8, 6.7, 7.2],
-                        fill: false,
-                        borderColor: '#62d03a',
-                        lineTension: 0,
-                        pointBorderColor: '#62d03a'
-                    }
+                    label: "2015",
+                    data: [3, 2.9, 2.7, 3.5, 4, 3.8, 3.7, 3.5, 4, 4.5, 4.3, 4.2],
+                    fill: false,
+                    borderColor: '#7347c1',
+                    lineTension: 0,
+                    pointBorderColor: '#7347c1'
+                },
+                {
+                    label: "2016",
+                    data: [4, 3.9, 3.7, 4.5, 5, 5.8, 5.1, 4.5, 5.7, 7, 6.25, 5.9],
+                    fill: false,
+                    borderColor: '#0674ec',
+                    lineTension: 0,
+                    pointBorderColor: '#0674ec'
+                },
+                {
+                    label: "2017",
+                    data: [5, 5.5, 5.9, 5.5, 5, 4.8, 5.8, 6.5, 6.1, 5.8, 6.7, 7.2],
+                    fill: false,
+                    borderColor: '#62d03a',
+                    lineTension: 0,
+                    pointBorderColor: '#62d03a'
+                }
                 ]
             },
 

@@ -1,2 +1,2 @@
 # marketplace
-CannCo Cannabis Merchant Markeplace
+CCash Cannabis Merchant Markeplace
